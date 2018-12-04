@@ -1,0 +1,22 @@
+====== 素材一览 ======
+
+===== 银素材 =====
+
+^ 图标                                   ^ 名称            ^ 掉落          ^ AP/个    ^ AP      ^ 绊/AP    ^
+| {{ sucai:shijieshuzhizhong.jpg?30 }}    | 世界树之种      | xxx\\ xxx     | xx\\ xx  | xx\\ xx | xx\\ xx  |
+| {{ sucai:guihuntideng.jpg?30 }}         | 鬼魂提灯        | xxx\\ xxx     | xx\\ xx  | xx\\ xx | xx\\ xx  |
+| {{ sucai:balianshuangjing?30 }}         | 八连双晶        | xxx\\ xxx     | xx\\ xx  | xx\\ xx | xx\\ xx  |
+| {{ sucai:shezhibaoyu?30 }}              | 蛇之宝玉        | xxx\\ xxx     | xx\\ xx  | xx\\ xx | xx\\ xx  |
+| {{ sucai:fenghuangyumao?30 }}           | 凤凰羽毛        | xxx\\ xxx     | xx\\ xx  | xx\\ xx | xx\\ xx  |
+| {{ sucai:wujianchilun?30 }}             | 无间齿轮        | xxx\\ xxx     | xx\\ xx  | xx\\ xx | xx\\ xx  |
+| {{ sucai:jinduanshuye?30 }}             | 禁断书页        | xxx\\ xxx     | xx\\ xx  | xx\\ xx | xx\\ xx  |
+| {{ sucai:rengongshengmingtiyouti?30 }}  | 人工生命体幼体   | xxx\\ xxx     | xx\\ xx  | xx\\ xx | xx\\ xx  |
+| {{ sucai:yuntitie?30 }}                 | 陨蹄铁          | xxx\\ xxx     | xx\\ xx  | xx\\ xx | xx\\ xx  |
+| {{ sucai:daqishixunzhang?30 }}          | 大骑士勋章      | xxx\\ xxx     | xx\\ xx  | xx\\ xx | xx\\ xx  |
+| {{ sucai:zhuiyidebeike?30 }}            | 追忆的贝壳      | xxx\\ xxx     | xx\\ xx  | xx\\ xx | xx\\ xx  |
+| {{ sucai:kudangouyu?30 }}               | 枯淡勾玉        | xxx\\ xxx     | xx\\ xx  | xx\\ xx | xx\\ xx  |
+| {{ sucai:yongyuanjiebing?30 }}          | 永远结冰        | xxx\\ xxx     | xx\\ xx  | xx\\ xx | xx\\ xx  |
+| {{ sucai:jurendezhihuan?30 }}           | 巨人的指环      | xxx\\ xxx     | xx\\ xx  | xx\\ xx | xx\\ xx  |
+| {{ sucai:jiguangzhigang?30 }}           | 极光之钢        | xxx\\ xxx     | xx\\ xx  | xx\\ xx | xx\\ xx  |
+| {{ sucai:xianguling?30 }}               | 闲古铃          | xxx\\ xxx     | xx\\ xx  | xx\\ xx | xx\\ xx  |
+
