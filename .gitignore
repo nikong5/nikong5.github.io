@@ -1,0 +1,6 @@
+.htaccess
+conf/
+data/cache/
+data/index/
+data/meta/
+data/attic/
