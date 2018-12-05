@@ -1,7 +1,0 @@
-{
-	"title": "$:/plugins/tiddlywiki/comments",
-	"description": "Comments",
-	"author": "JeremyRuston",
-	"core-version": ">=5.0.0",
-	"list": "readme config"
-}
