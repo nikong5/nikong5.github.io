@@ -1,52 +1,36 @@
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Nikong5</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="canonical" href="http://html5-templates.com/" />
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-        <link rel="stylesheet" href="style.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+			<meta charset="utf-8">
+			<meta http-equiv="x-ua-compatible" content="ie=edge">
+			<title>Nikong5</title>
+			<meta name="description" content="">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="apple-touch-icon" href="apple-touch-icon.png">
+			<link rel="stylesheet" href="style.css">
+			<script src="js/vendor/jquery-3.3.1.min.js"></script>
+			<script src="script.js"></script>
+			<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+			<!-- Include javascript -->
+			<script type="text/javascript">
+			　　$(function(){
+					$("#sidebar-include").load("sidebar.html #sidebar");
+					$("#header-include").load("header.html #pageheader");
+					$("#footer-include").load("footer.html #pagefooter");
+			　　})
+			</script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
 		<div class="wrapAll clearfix">
-			<div class="sidebar">
-				<div class="logo">
-					<a href="/"><img src='img/logo.png' alt="logo"></a>
-				</div>
-				<div class="navigation">
-					<ul>
-						<li><a href="#">Main page</a></li>
-					</ul>
-					<h3>FGO</h3>
-					<ul>
-						<li><a href="#">Item</a></li>
-						<li><a href="#">Servant</a></li>
-						<li><a href="#">Enemy</a></li>
-						<li><a href="#">Master Equipment</a></li>
-						<li><a href="#">Quest</a></li>
-					</ul>
-					<h3>MHW</h3>
-					<ul>
-						<li><a href="#">Item</a></li>
-						<li><a href="#">Monster</a></li>
-						<li><a href="#">Weapon</a></li>
-					</ul>
-				</div>
+			<div id="sidebar-include">
+				<!-- include sidebar -->
 			</div>
+			<!-- Contents -->
 			<div class="mainsection">
-				
 				<div class="article">
-					<h1>Nikong5</h1>
-					<p class="siteSub">Personal wiki for my favorate games.</p>
+					<div id="header-include">
+						<!-- include pageheader -->
+					</div>
 					<h2>FGO Contents</h2>
 					<div class="contentsPanel">
 						<div class="contentsHeader">FGO</div>
@@ -78,20 +62,11 @@
 							<li><span></span><a href="#">Weapon</a></li>
 						</ul>
 					</div>
-					
 				</div>
-				<div class="pagefooter">
-					Copyright (c) 2018-2099 Nikong5, All Rights Reserved.
+				<div id="footer-include">
+					<!-- include pagefooter -->	
 				</div>
-			
 			</div>		
 		</div>
-		
-		
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="script.js"></script>
-
-
     </body>
 </html>
