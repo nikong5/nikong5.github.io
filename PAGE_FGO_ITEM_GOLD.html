@@ -1,23 +1,25 @@
 <!doctype html>
 <html class="no-js" lang="en">
+	<html class="no-js" lang="en">
     <head>
 			<meta charset="utf-8">
 			<meta http-equiv="x-ua-compatible" content="ie=edge">
 			<title>Nikong5</title>
 			<meta name="description" content="">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<link rel="apple-touch-icon" href="apple-touch-icon.png">
-			<link rel="stylesheet" href="style.css">
-			<link rel="stylesheet" href="MediaWikiGadget-site.css">
-			<script src="js/vendor/jquery-3.3.1.min.js"></script>
-			<script src="script.js"></script>
-			<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+			<link rel="stylesheet" href="css/style.css">
+			<link rel="stylesheet" href="css/datatables.css">
+			<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+			<script type="text/javascript" src="js/script.js"></script>
+			<script type="text/javascript" src="js/modernizr-2.8.3.min.js"></script>
+			<script type="text/javascript" src="js/datatables.js"></script>
 			<!-- Include javascript -->
 			<script type="text/javascript">
 			　　$(function(){
 					$("#sidebar-include").load("sidebar.html #sidebar");
 					$("#header-include").load("header.html #pageheader");
 					$("#footer-include").load("footer.html #pagefooter");
+					$("#gold-item").dataTable();
 			　　})
 			</script>
     </head>
@@ -34,23 +36,41 @@
 					</div>
 <!-- ################################## PAGE CONTENTS START ################################## -->
 					<h2>FGO Item [金素材]</h2>
-<table class="wikitable">
-    <caption>表のタイトル</caption>
-    <tr>
-        <th>見出し0</th><th>列見出しA</th><th>列見出しB</th><th>列見出しC</th>
-    </tr>
-    <tr>
-        <th>行見出し1</th><td>セル1A</td><td>セル1B</td><td>セル1C</td>
-    </tr>
-    <tr>
-        <th>行見出し2</th><td>セル2A</td><td>セル2B</td><td>セル2C</td>
-    </tr>
-</table>
+					<table class = "display" id = "gold-item" width="50%" border="1" align="left">
+						<thead>
+							<tr>
+								<th width="5%">图标</th>
+								<th width="10%">名称</th>
+								<th width="20%">掉落</th>
+								<th width="5%">AP/个</th>
+								<th width="5%">AP</th>
+								<th width="5%">绊/AP</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td align="center"><img src="img/fgo/sucai/hundunzhizhua.jpg" width="40" height="40"></td>
+								<td>混沌之爪</td>
+								<td>合众为一-得梅因<br>雅戈泰-地底平原</td>
+								<td>89<br>94</td>
+								<td>18<br>20</td>
+								<td>43<br>48</td>
+							</tr>
+							<tr>
+								<td align="center"><img src="img/fgo/sucai/manshenxinzang.jpg" width="40" height="40"></td>
+								<td>蛮神心脏</td>
+								<td>塞勒姆-カーター家<br>新宿-新宿御苑</td>
+								<td>161<br>171</td>
+								<td>20<br>21</td>
+								<td>48<br>51</td>
+							</tr>
+						</tbody>
+					</table>
 <!-- ################################## PAGE CONTENTS END ################################## -->
 				<div id="footer-include">
 					<!-- include pagefooter -->	
 				</div>
-			</div>		
+			</div>
 		</div>
     </body>
 </html>
