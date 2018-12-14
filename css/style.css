@@ -290,7 +290,7 @@ p.siteSub {
 	font-size: 92%;
 }
 body {
-	background: url(img/main/body-top.png) repeat-x top left #f6f6f6;
+	background: url(../img/main/body-top.png) repeat-x top left #f6f6f6;
 }
 ul {
 	list-style-type: none;

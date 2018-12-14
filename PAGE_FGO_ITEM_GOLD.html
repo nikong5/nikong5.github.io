@@ -1,32 +1,29 @@
 <!doctype html>
 <html class="no-js" lang="en">
-	<html class="no-js" lang="en">
     <head>
-			<meta charset="utf-8">
-			<meta http-equiv="x-ua-compatible" content="ie=edge">
-			<title>Nikong5</title>
-			<meta name="description" content="">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<link rel="stylesheet" href="css/style.css">
-			<link rel="stylesheet" href="css/datatables.css">
-			<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-			<script type="text/javascript" src="js/script.js"></script>
-			<script type="text/javascript" src="js/modernizr-2.8.3.min.js"></script>
-			<script type="text/javascript" src="js/datatables.js"></script>
-				<!-- Include javascript -->
-			<script type="text/javascript">
-			　　$(function(){
-					$("#sidebar-include").load("sidebar.html #sidebar");
-					$("#header-include").load("header.html #pageheader");
-					$("#footer-include").load("footer.html #pagefooter");
-					$("#gold-item").dataTable();
-			　　})
-			</script>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Nikong5</title>
+		<link href="css/style.css" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<script src="jquery/js/jquery.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/modernizr-2.8.3.min.js"></script>
+		<!-- Include javascript -->
+		<script type="text/javascript">
+		　　$(function(){
+				$("#sidebar-include").load("sidebar.html #sidebar");
+				$("#header-include").load("header.html #pageheader");
+				$("#footer-include").load("footer.html #pagefooter");
+		　　})
+		</script>
     </head>
     <body>
 		<div class="wrapAll clearfix">
 			<div id="sidebar-include">
-				<!-- include sidebar -->
+			<!-- include sidebar -->
 			</div>
 			<!-- Contents -->
 			<div class="mainsection">
@@ -35,37 +32,40 @@
 						<!-- include pageheader -->
 					</div>
 <!-- ################################## PAGE CONTENTS START ################################## -->
-					<h2>FGO Item [金素材]</h2>
-					<table class = "display" id = "gold-item" cellspacing="0" width="100%" border="1" align="left">
-						<thead>
-							<tr>
-								<th width="">图标</th>
-								<th width="">名称</th>
-								<th width="50%">掉落</th>
-								<th width="">AP/个</th>
-								<th width="">AP</th>
-								<th width="">绊/AP</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td align="center"><img src="img/fgo/sucai/hundunzhizhua.jpg" width="40" height="40"></td>
-								<td>混沌之爪</td>
-								<td>合众为一-得梅因<br>雅戈泰-地底平原</td>
-								<td>89<br>94</td>
-								<td>18<br>20</td>
-								<td>43<br>48</td>
-							</tr>
-							<tr>
-								<td align="center"><img src="img/fgo/sucai/manshenxinzang.jpg" width="40" height="40"></td>
-								<td>蛮神心脏</td>
-								<td>塞勒姆-カーター家<br>新宿-新宿御苑</td>
-								<td>161<br>171</td>
-								<td>20<br>21</td>
-								<td>48<br>51</td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="container">
+						<div class="table-responsive">
+							<table class="table table-bordered">
+									<thead>
+										<tr>
+										<th>图标</th>
+										<th>名称</th>
+										<th>掉落</th>
+										<th>AP/个</th>
+										<th>AP</th>
+										<th>绊/AP</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+										<th scope="row"><img src="img/fgo/sucai/hundunzhizhua.jpg" width="40" height="40"></th>
+											<td>混沌之爪</td>
+											<td>合众为一-得梅因<br>雅戈泰-地底平原</td>
+											<td>89<br>94</td>
+											<td>18<br>20</td>
+											<td>43<br>48</td>
+										</tr>
+										<tr>
+										<th scope="row"><img src="img/fgo/sucai/manshenxinzang.jpg" width="40" height="40"></th>
+											<td>蛮神心脏</td>
+											<td>塞勒姆-カーター家<br>新宿-新宿御苑</td>
+											<td>161<br>171</td>
+											<td>20<br>21</td>
+											<td>48<br>51</td>
+										</tr>
+									</tbody>
+							</table>
+						</div>
+					</div>
 <!-- ################################## PAGE CONTENTS END ################################## -->
 				<div id="footer-include">
 					<!-- include pagefooter -->	
