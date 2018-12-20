@@ -3,7 +3,7 @@
     <head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.5, user-scalable=yes">
 		<title>Nikong5</title>
 		<link href="css/style.css" rel="stylesheet">
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -11,58 +11,6 @@
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		<script src="js/script.js"></script>
 		<script src="js/modernizr-2.8.3.min.js"></script>
-		<script>
-				    function myBrowser(){
-				    var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
-				    var isOpera = userAgent.indexOf("Opera") > -1;
-				    if (isOpera) {
-				        return "Opera"
-				    }; //判断是否Opera浏览器
-				    if (userAgent.indexOf("Firefox") > -1) {
-				        return "FF";
-				    } //判断是否Firefox浏览器
-				    if (userAgent.indexOf("Chrome") > -1){
-				  return "Chrome";
-				 }
-				    if (userAgent.indexOf("Safari") > -1) {
-				        return "Safari";
-				    } //判断是否Safari浏览器
-				    if (userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera) {
-				        return "IE";
-				    }; //判断是否IE浏览器
-				}
-				var mb = myBrowser();
-				var chengfa = 1;
-				if("Safari" == mb){
-				chengfa = 1;
-				}
-				if("Safari" != mb){
-				    if(window.orientation == undefined){
-				        document.write("<meta id=\"viewp1\" name=\"viewport\" content=\"width=1400px, minimum-scale=0.1,maximum-scale=2.0, initial-scale="+(window.screen.width * 8/(chengfa * 12600))+"\">");
-				    }else if(window.orientation == 0 || window.orientation == 180){
-				        document.write("<meta id=\"viewp1\" name=\"viewport\" content=\"width=1400px, minimum-scale=0.1,maximum-scale=2.0, initial-scale="+(window.screen.width * 4/(chengfa * 12600))+"\">");
-				    }else if(window.orientation == 90 || window.orientation == (-90)){
-				        document.write("<meta id=\"viewp1\" name=\"viewport\" content=\"width=1400px, minimum-scale=0.1,maximum-scale=2.0, initial-scale="+(window.screen.height * 4/(chengfa * 12600))+"\">");
-				    }
-				    var viewp1 = document.getElementById('viewp1');
-				    function changeViewp1(){
-				        if(window.orientation == 0 || window.orientation == 180){
-				            viewp1.setAttribute('content','width=1400px, minimum-scale=0.1,maximum-scale=2.0, initial-scale='+ (window.screen.width * 4/(chengfa * 12600)));
-				        }else if(window.orientation == 90 || window.orientation == (-90)){
-				            viewp1.setAttribute('content','width=1400px, minimum-scale=0.1,maximum-scale=2.0, initial-scale='+ (window.screen.height * 4/(chengfa * 12600)));
-				        }
-				    }
-				    changeViewp1();
-				    if("Safari" == mb){
-				        window.addEventListener("orientationchange",changeViewp1,false);
-				    }
-				    if(window.addEventListener){
-				        window.addEventListener("resize",changeViewp1,false);
-				    }else if(window.attachEvent){
-				        window.attachEvent("onresize",changeViewp1);
-				    }
-				}    
-				    </script>
     </head>
     <body>
 		<div class="wrapAll clearfix">
