@@ -44,3 +44,22 @@ $(document).ready(function(){
 });
 
 
+$(function(){
+    // Include header footer sidebar
+    $("#sidebar-include").load("sidebar.html #sidebar");
+    $("#header-include").load("header.html #pageheader");
+    $("#footer-include").load("footer.html #pagefooter");
+
+    // Search box
+    $("#searchBox").keyup(function () {
+        var value = $(this).val();
+        $("#dataSet li").each(function () {
+            $(this).hide();
+            if ($(this).text().indexOf($.trim(value)) >= 0) {
+                $(this).show();
+            }
+        });
+    });
+    
+});
+
