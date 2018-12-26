@@ -613,6 +613,9 @@ span.user {
 }
 
 
+
+/************************************ customize for Nikong5 ************************************/
+
 p.wid-50 {
 	width:50px;
 }
@@ -631,4 +634,13 @@ p.wid-250 {
 }
 p.bold {
 	font-weight: bold;
+}
+p.red {
+	color:red;
+}
+p.green {
+	color:green;
+}
+p.blue {
+	color:blue;
 }

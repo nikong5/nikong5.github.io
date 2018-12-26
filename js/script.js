@@ -44,6 +44,9 @@ $(document).ready(function(){
 });
 
 
+
+// ************************************ customize for Nikong5 ************************************
+
 $(function(){
     // Include header footer sidebar
     $("#sidebar-include").load("sidebar.html #sidebar");
