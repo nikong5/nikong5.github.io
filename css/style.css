@@ -629,3 +629,6 @@ p.wid-250 {
 	width:250px;
 	white-space:nowrap;
 }
+p.bold {
+	font-weight: bold;
+}
