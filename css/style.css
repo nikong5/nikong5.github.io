@@ -613,11 +613,17 @@ span.user {
 }
 
 
+p.wid-30 {
+	width:30px;
+}
 p.wid-60 {
 	width:60px;
 }
 p.wid-100 {
 	width:100px;
+}
+p.wid-170 {
+	width:170px;
 }
 p.wid-250 {
 	width:250px;
