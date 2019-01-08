@@ -647,3 +647,6 @@ p.green {
 p.blue {
 	color:blue;
 }
+p.right {
+	text-align: right;
+}
