@@ -615,7 +615,11 @@ span.user {
 
 
 /************************************ customize for Nikong5 ************************************/
-
+.dlCharacterComment {
+	padding: 1.5em 1.3em 2em;
+	font-size: 90%;
+	line-height: 2em;
+}
 p.wid-50 {
 	width:50px;
 }

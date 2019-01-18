@@ -53,6 +53,9 @@ $(function(){
     $("#header-include").load("header.html #pageheader");
     $("#footer-include").load("footer.html #pagefooter");
 
+    // For DL
+    $("#dl-character-comment").load("dl-character-comment.html #dlCharacterComment");
+
     // Search box
     $("#searchBox").keyup(function () {
         var value = $(this).val();
