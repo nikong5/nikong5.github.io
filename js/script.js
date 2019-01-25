@@ -55,6 +55,7 @@ $(function(){
 
     // For DL
     $("#dl-character-comment").load("dl-character-comment.html #dlCharacterComment");
+    $("#dl-dragon-comment").load("dl-dragon-comment.html #dlDragonComment");
 
     // Search box
     $("#searchBox").keyup(function () {
