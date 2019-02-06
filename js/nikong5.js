@@ -2,8 +2,10 @@
 
 $(function(){
     // Include
-    $("#header-include").load("https://nikong5.github.io/header.html #pageheader");
-    $("#footer-include").load("https://nikong5.github.io/footer.html #pagefooter");
+    $("#header-include").load("header.html #pageheader");
+    $("#footer-include").load("footer.html #pagefooter");
+    $("#sub-header-include").load("../../sub-header.html #subPageheader");
+    $("#sub-footer-include").load("../../footer.html #pagefooter");
 
     // Search box
     $("#searchBox").keyup(function () {
