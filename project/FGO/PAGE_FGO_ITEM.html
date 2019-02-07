@@ -5,12 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="#" />
     <title>Nikong5</title>
-	<meta name="description" content="素材一览">
+    <meta name="description" content="素材一览">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../../css/style.css">
-	<link rel="stylesheet" href="../../css/nikong5.css">
-	<script src="../../jquery/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../css/nikong5.css">
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../jquery/js/jquery.min.js"></script>
 	<script src="../../js/nikong5.js"></script>
 </head>
 
@@ -20,30 +21,35 @@
 			<!-- include pageheader -->
 		</div>
 	</header>
-	<section>
-		<strong>FGO ITEM</strong>
-	</section>
-	<section id="pageContent">
-		<main role="main">
-			<article>
-				<h2>Fate/Grand Order</h2>
-				<p>
-					<a href="#">英灵一览</a>&nbsp;&nbsp;
-					<a href="#">礼装一览</a>&nbsp;&nbsp;
-					<a href="project/FGO/PAGE_FGO_ITEM.html">素材一览</a>&nbsp;&nbsp;
-					<a href="#">御主礼装</a>&nbsp;&nbsp;
-				</p>
-			</article>
-			<article>
-				<h2>Dragalia Lost</h2>
-				<p>XXX</p>
-			</article>
-		</main>
-		<!-- <aside>
-			<div>Sidebar 1</div>
-			<div>Sidebar 2</div>
-			<div>Sidebar 3</div>
-		</aside> -->	
+	<section id="pageContent" style="overflow:auto;min-width: width 900px;">
+        <div class="contentsPanel">
+            <div class="contentsHeader">素材一览</div>
+            <ul>
+                <a href="#tongsucai">铜素材</a><br>
+                <a href="#">银素材</a><br>
+                <a href="#">金素材</a>
+            </ul>
+        </div>
+        <h2 id="tongsucai">铜素材</h2>
+        <div class="d-table">
+            <ul id="dataSet">
+                <div class="d-table-row">
+                    <p class="d-table-cell p-2 border small wid-60">图标</p>
+                    <p class="d-table-cell p-2 border small wid-100">名称</p>
+                    <p class="d-table-cell p-2 border small wid-250">主要掉落</p>
+                    <p class="d-table-cell p-2 border small wid-500">详细信息</p>
+                </div>
+                <li><div class="d-table-row">
+                    <p class="d-table-cell p-2 border small wid-60">image</p>
+                    <p class="d-table-cell p-2 border small wid-100">英雄之证</p>
+                    <p class="d-table-cell p-2 border small wid-250">俄刻阿诺斯-海盗船<br>合众为一-达拉斯</p>
+                    <p class="d-table-cell p-2 border small wid-500">被认定为英雄的证明。<br>为众多人所拥有，<br>但因没有自觉而被遗忘。</p>
+                </div></li>
+            </ul>
+        </div>
+        <div id="sonLayer2" style="width:98%;  margin:3px; height:100px;  border:5px solid red;  background-color:yellow;">
+            <Span style="display:block;text-align:center;">我是DIV4</span>
+        </div>
 	</section>
 	<footer>
 		<div id="sub-footer-include">
