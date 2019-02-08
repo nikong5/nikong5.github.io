@@ -1,10 +1,10 @@
-
+/************************************ show/hide contents panel ************************************/
 .contentsPanel {
 	border: 1px solid #a2a9b1;
 	background-color: #f8f9fa;
     padding: 5px;
     margin: 0 0 20px 0;
-	font-size: 95%;
+	font-size: 80%;
 	position: relative;
 	line-height: 1.7em;
 	width: 180px;
@@ -18,7 +18,7 @@
 	float: right;
 	margin: 0 5px;
 	position: absolute;
-	right: 20px;
+	right: 15px;
 	cursor: pointer;
 	color: #0645ad;
 	top: 4px;
@@ -65,30 +65,4 @@
 }
 
 
-
 /************************************ customize for Nikong5 ************************************/
-p.wid-50 {
-	width:50px;
-}
-p.wid-60 {
-	width:60px;
-}
-p.wid-70 {
-	width:70px;
-}
-p.wid-100 {
-	width:100px;
-}
-p.wid-120 {
-	width:120px;
-}
-p.wid-180 {
-	width:180px;
-}
-p.wid-250 {
-	width:250px;
-	/* white-space:nowrap; */
-}
-p.wid-500 {
-	width:500px;
-}
