@@ -52,6 +52,7 @@ $(function(){
     $("#footer-include").load("footer.html #pagefooter");
     $("#sub-header-include").load("../../sub-header.html #subPageheader");
     $("#sub-footer-include").load("../../footer.html #pagefooter");
+    $("#top-button-include").load("../../top-button.html #topButton");
 
     // // Search box
     // $("#searchBox").keyup(function () {

@@ -58,11 +58,13 @@
     line-height: 2em;
     text-align: left;
 }
+.topButton {
+	position: fixed;
+	right: 30px;
+	bottom: 10px;
+}
 @media screen and (max-width: 550px) {
 	.contentsPanel {
 		width: auto;
 	}
 }
-
-
-/************************************ customize for Nikong5 ************************************/
