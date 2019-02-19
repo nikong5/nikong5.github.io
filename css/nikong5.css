@@ -55,13 +55,12 @@
 .pagefooter {
 	padding: 1.5em 1.3em 2em;
 	font-size: 75%;
-    line-height: 2em;
     text-align: left;
 }
 .topButton {
 	position: fixed;
 	right: 20px;
-	bottom: 10px;
+	bottom: 40px;
 	float: right;
 	opacity: 0.3;
 	z-index: 9999;
