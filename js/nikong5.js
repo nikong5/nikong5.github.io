@@ -45,8 +45,8 @@ $(document).ready(function(){
 
 
 // ************************************ customize for Nikong5 ************************************
-window.addEventListener('touchstart',function(e){e.preventDefault();});
-window.addEventListener('touchmove',function(e){e.preventDefault();});
+window.addEventListener('touchstart',function(e){e.preventDefault();},{passive:false});
+window.addEventListener('touchmove',function(e){e.preventDefault();},{passive:false});
 
 $(function(){
     // Include
