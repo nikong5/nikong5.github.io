@@ -64,6 +64,7 @@
 	bottom: 10px;
 	float: right;
 	opacity: 0.3;
+	z-index: 999;
 }
 @media screen and (max-width: 550px) {
 	.contentsPanel {
