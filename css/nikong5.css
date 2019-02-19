@@ -61,7 +61,7 @@
 .topButton {
 	position: fixed;
 	right: 20px;
-	bottom: 30px;
+	bottom: 10px;
 	float: right;
 	opacity: 0.3;
 }
