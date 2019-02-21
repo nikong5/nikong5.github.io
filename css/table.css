@@ -149,8 +149,6 @@ iframe {
   background: -o-linear-gradient(bottom, #c471f5, #fa71cd);
   background: -moz-linear-gradient(bottom, #c471f5, #fa71cd);
   background: linear-gradient(bottom, #c471f5, #fa71cd);
-
-
 }
 
 .container-table100 {
@@ -209,21 +207,8 @@ th, td {
   width: 235px;
 }
 
-.column6 {
-  width: 170px;
-}
-
-.column7 {
-  width: 330px;
-}
-
-.column8 {
-  width: 305px;
-}
-
 .column1-v2 {
   width: 40px;
-  height: 61px;
   padding-left: 10px;
 }
 
@@ -268,7 +253,7 @@ th, td {
   position: absolute;
   z-index: 1000;
   width: 40px;
-  height: 60px;
+  height: 185px;
   top: 0;
   left: 0;
 }
@@ -286,6 +271,10 @@ th, td {
 
 .table100-nextcols table{
   table-layout: fixed;
+}
+
+.table100-nextcols tr{
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .shadow-table100-firstcol .shadow-table100-firstcol-v2 {
@@ -356,5 +345,5 @@ th, td {
 }
 
 .table100.ver2 tr {
-  border-bottom: 1px solid #f2f2f2;
+  
 }
