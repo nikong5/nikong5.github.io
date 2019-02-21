@@ -266,7 +266,7 @@ th, td {
   width: 100%;
   overflow: auto;
   padding-left: 10px;
-  padding-bottom: 28px;
+  /* padding-bottom: 28px; */
 }
 
 .table100-nextcols table{
