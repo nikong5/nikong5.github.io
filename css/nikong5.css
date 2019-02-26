@@ -81,6 +81,7 @@
 	height: 100%;
 	border: 1px solid #000000;
 	white-space: nowrap;
+	z-index: 200;
 }
 .hiddenA{
 	position: relative;
