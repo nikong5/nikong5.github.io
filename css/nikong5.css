@@ -79,9 +79,7 @@
 .hiddenBoxContent {
 	width: 100%;
 	height: 100%;
-}
-.hiddenBoxContent img {
-	display: inline;
+	white-space: nowrap;
 }
 .hiddenA{
 	position: relative;
