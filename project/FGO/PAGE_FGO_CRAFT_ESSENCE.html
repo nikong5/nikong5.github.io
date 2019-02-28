@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Nikong5</title>
     <meta name="description" content="概念礼装">
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
@@ -25,7 +25,10 @@
 	<section id="pageContent">
         <h3>概念礼装</h3>
         <br>
-        <input type="search" id="searchBox" class="search-box" value="输入检索内容" onclick="this.value=''"/>
+        <div>
+            <input type="text" id="searchBox" class="search-box" value="输入检索内容" maxlength="47" />
+            <span class="text-clear"><img src="../../img/clear_icon.png" id="clearIcon" class="clear-icon" /></span>
+        </div>
         <div class="table100 ver3">
             <div class="wrap-table100-nextcols js-pscroll">
                 <div class="table100-nextcols">
@@ -66,7 +69,6 @@
                     </ul>
                 </div>
             </div>
-            
         </div>
         <div id="top-button-include">
             <!-- include topButton -->	

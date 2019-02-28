@@ -67,6 +67,30 @@ $(function(){
             }
         });
     });
+
+    $("#searchBox").focus(function () {
+        var value = $("#searchBox").val();
+        if (value == '输入检索内容') {
+            searchBox.value = '';
+        }
+    });
+
+    $("#searchBox").blur(function () {
+        var value = $("#searchBox").val();
+        if (value == '') {
+            searchBox.value = '输入检索内容';
+        }
+    });
+
+    $("#clearIcon").click(function () {
+        searchBox.value = '';
+        $("#dataSet li").each(function () {
+            $(this).show();
+        });
+
+        searchBox.focus();
+        searchBox.select();
+    });
     
 });
 
@@ -77,3 +101,4 @@ function toggle_visibility(id) {
     else
        e.style.display = 'block';
  }
+
