@@ -70,7 +70,7 @@ $(function(){
 
     $("#searchBox").focus(function () {
         var value = $("#searchBox").val();
-        if (value == '输入检索内容') {
+        if (value == ' 输入检索内容') {
             searchBox.value = '';
         }
     });
@@ -78,7 +78,7 @@ $(function(){
     $("#searchBox").blur(function () {
         var value = $("#searchBox").val();
         if (value == '') {
-            searchBox.value = '输入检索内容';
+            searchBox.value = ' 输入检索内容';
         }
     });
 
