@@ -88,4 +88,11 @@
 	height: 0;
 	overflow: hidden;
 }
-
+.search-box{
+	font-family: Roboto-Medium;
+	font-size: 12px;
+	color: #999999;
+	background-color: rgb(229, 234, 236);
+	line-height: 1.5;
+	margin-left: 10px;
+}

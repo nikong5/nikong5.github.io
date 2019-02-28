@@ -57,16 +57,16 @@ $(function(){
     $("#sub-footer-include").load("../../footer.html #pagefooter");
     $("#top-button-include").load("../../top-button.html #topButton");
 
-    // // Search box
-    // $("#searchBox").keyup(function () {
-    //     var value = $(this).val();
-    //     $("#dataSet li").each(function () {
-    //         $(this).hide();
-    //         if ($(this).text().indexOf($.trim(value)) >= 0) {
-    //             $(this).show();
-    //         }
-    //     });
-    // });
+    // Search box
+    $("#searchBox").keyup(function () {
+        var value = $(this).val();
+        $("#dataSet li").each(function () {
+            $(this).hide();
+            if ($(this).text().indexOf($.trim(value)) >= 0) {
+                $(this).show();
+            }
+        });
+    });
     
 });
 
