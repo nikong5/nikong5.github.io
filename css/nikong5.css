@@ -102,7 +102,9 @@
 .text-clear {
 	vertical-align: middle;
 	background-color: rgb(229, 234, 236);
-	margin-left: -19px;
+	margin-left: -20px;
+	width: 15px;
+	height: 15px;
 }
 .clear-icon {
 	vertical-align: middle;
