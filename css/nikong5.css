@@ -88,7 +88,8 @@
 	height: 0;
 	overflow: hidden;
 }
-.search-box {
+
+#searchBox {
 	display: inline;
 	font-family: Roboto-Medium;
 	font-size: 12px;
@@ -98,17 +99,4 @@
 	margin-left: 10px;
 	padding-left: 5px;
 	width: 200px;
-}
-.text-clear {
-	vertical-align: middle;
-	background-color: rgb(229, 234, 236);
-	margin-left: -20px;
-	width: 15px;
-	height: 15px;
-}
-.clear-icon {
-	vertical-align: middle;
-	opacity: 0.3;
-	width: 15px;
-	height: 15px;
 }

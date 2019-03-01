@@ -77,6 +77,14 @@ textarea:focus, input:focus {
   border-color: transparent !important;
 }
 
+/* ---------overwrite bootstrap css------------ */
+input[type="search"] {
+	-webkit-appearance: searchfield;
+}
+input[type="search"]::-webkit-search-cancel-button {
+	-webkit-appearance: searchfield-cancel-button;
+}
+
 /* ------------------------------------ */
 button {
 	outline: none !important;
