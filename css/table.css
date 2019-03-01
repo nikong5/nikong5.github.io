@@ -79,10 +79,17 @@ textarea:focus, input:focus {
 
 /* ---------overwrite bootstrap css------------ */
 input[type="search"] {
-	-webkit-appearance: searchfield;
+  /* -webkit-appearance: searchfield; */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
 }
 input[type="search"]::-webkit-search-cancel-button {
-	-webkit-appearance: searchfield-cancel-button;
+  -webkit-appearance: searchfield-cancel-button;
+}
+input[type="search"]::-webkit-search-decoration {
+  display: none;
 }
 
 /* ------------------------------------ */
