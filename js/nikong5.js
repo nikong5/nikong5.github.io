@@ -58,26 +58,26 @@ $(function(){
     $("#top-button-include").load("../../top-button.html #topButton");
 
     // Search box
-    var current_key = undefined;
-    $("#searchBox").keydown(function(event){
-        $("#searchBox").focus();
-        if(event.key) {
-            if(event.key !== "Dead"){
-                current_key = event.key;
-            }
-        }
-    }).keyup(function(event){
-        var value = $(this).val();
-        if(event.key === current_key) {
-            $("#dataSet li").each(function () {
-                $(this).hide();
-                if ($(this).text().indexOf($.trim(value)) >= 0) {
-                    $(this).show();
-                }
-            });
-        }
-        current_key = undefined;
-    });
+    // var current_key = undefined;
+    // $("#searchBox").keydown(function(event){
+    //     $("#searchBox").focus();
+    //     if(event.key) {
+    //         if(event.key !== "Dead"){
+    //             current_key = event.key;
+    //         }
+    //     }
+    // }).keyup(function(event){
+    //     var value = $(this).val();
+    //     if(event.key === current_key) {
+    //         $("#dataSet li").each(function () {
+    //             $(this).hide();
+    //             if ($(this).text().indexOf($.trim(value)) >= 0) {
+    //                 $(this).show();
+    //             }
+    //         });
+    //     }
+    //     current_key = undefined;
+    // });
     // $("#searchBox").blur(function(){
     //     if(current_key !== undefined){
     //         alert("222");
@@ -113,6 +113,13 @@ $(function(){
     // });
 
     $('#searchBox').on('input', function(e) {
+        var value = $(this).val();
+        $("#dataSet li").each(function () {
+            $(this).hide();
+            if ($(this).text().indexOf($.trim(value)) >= 0) {
+                $(this).show();
+            }
+        });
         if('' == this.value) {
             $("#dataSet li").each(function () {
                 $(this).show();
