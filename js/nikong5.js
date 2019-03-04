@@ -58,60 +58,6 @@ $(function(){
     $("#top-button-include").load("../../top-button.html #topButton");
 
     // Search box
-    // var current_key = undefined;
-    // $("#searchBox").keydown(function(event){
-    //     $("#searchBox").focus();
-    //     if(event.key) {
-    //         if(event.key !== "Dead"){
-    //             current_key = event.key;
-    //         }
-    //     }
-    // }).keyup(function(event){
-    //     var value = $(this).val();
-    //     if(event.key === current_key) {
-    //         $("#dataSet li").each(function () {
-    //             $(this).hide();
-    //             if ($(this).text().indexOf($.trim(value)) >= 0) {
-    //                 $(this).show();
-    //             }
-    //         });
-    //     }
-    //     current_key = undefined;
-    // });
-    // $("#searchBox").blur(function(){
-    //     if(current_key !== undefined){
-    //         alert("222");
-    //     }
-    //     current_key = undefined;
-    // });
-
-
-
-    // $("#searchBox").keyup(function () {
-    //     var value = $(this).val();
-    //     $("#dataSet li").each(function () {
-    //         $(this).hide();
-    //         if ($(this).text().indexOf($.trim(value)) >= 0) {
-    //             $(this).show();
-    //         }
-    //     });
-    // });
-    
-
-    // $("#searchBox").focus(function () {
-    //     var value = $("#searchBox").val();
-    //     if (value == '输入检索内容') {
-    //         searchBox.value = '';
-    //     }
-    // });
-
-    // $("#searchBox").blur(function () {
-    //     var value = $("#searchBox").val();
-    //     if (value == '') {
-    //         searchBox.value = '输入检索内容';
-    //     }
-    // });
-
     $('#searchBox').on('input', function(e) {
         var value = $(this).val();
         $("#dataSet li").each(function () {
