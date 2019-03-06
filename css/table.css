@@ -247,18 +247,22 @@ th, td {
 
 .column2-v3 {
   width: 70px;
+  vertical-align: middle;
 }
 
 .column3-v3 {
   width: 40px;
+  vertical-align: middle;
 }
 
 .column4-v3 {
-  width: 40px;
+  width: 30px;
+  vertical-align: middle;
 }
 
 .column5-v3 {
-  width: 260px;
+  width: 270px;
+  vertical-align: middle;
 }
 
 .table100 th {
