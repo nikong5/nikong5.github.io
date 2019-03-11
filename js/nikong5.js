@@ -70,7 +70,7 @@ $(function(){
             // $("#dataSet li").each(function () {
             //     $(this).show();
             // });
-            location.reload();
+            document.body.onload();
         }
     });
     

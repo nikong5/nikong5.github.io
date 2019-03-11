@@ -13,6 +13,7 @@ function subPage(listcount,clickbutton,listitem){
 			for(var i=begin;i<end;i++){
 				$(listitem).eq(i).show();
 			}
+			document.body.scrollTop = document.documentElement.scrollTop = 0;
 		}else if($(this).index()==0){
 			if(count<1){
 				count=1;
@@ -23,6 +24,7 @@ function subPage(listcount,clickbutton,listitem){
 				$(listitem).eq(i).show();
 			}
 			count--;
+			document.body.scrollTop = document.documentElement.scrollTop = 0;
 		}else if($(this).index()==($(clickbutton).length-1)){
 			if(count>=$(clickbutton).length-3){
 				count=$(clickbutton).length-4;
@@ -33,6 +35,7 @@ function subPage(listcount,clickbutton,listitem){
 				$(listitem).eq(i).show();
 			}
 			count++;
+			document.body.scrollTop = document.documentElement.scrollTop = 0;
 		}
 	})
 }
