@@ -67,9 +67,10 @@ $(function(){
             }
         });
         if('' == this.value) {
-            $("#dataSet li").each(function () {
-                $(this).show();
-            });
+            // $("#dataSet li").each(function () {
+            //     $(this).show();
+            // });
+            location.reload();
         }
     });
     
@@ -81,5 +82,5 @@ function toggle_visibility(id) {
        e.style.display = 'none';
     else
        e.style.display = 'block';
- }
+}
 

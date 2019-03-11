@@ -13,9 +13,10 @@
     <link rel="stylesheet" href="../../css/nikong5.css">
     <script src="../../jquery/js/jquery.min.js"></script>
     <script src="../../js/nikong5.js"></script>
+    <script src="../../js/pager.js"></script>
 </head>
 
-<body>
+<body onload="subPage(50,'#pager>span','#dataSet>li');">
 	<header>
 		<div id="sub-header-include">
 			<!-- include subPageheader -->
@@ -1198,6 +1199,7 @@
             </div>
         </div>
     </section>
+    <div id="pager"><span>上一页</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>下一页</span></div>
 	<footer>
         <div id="top-button-include">
             <!-- include topButton -->	

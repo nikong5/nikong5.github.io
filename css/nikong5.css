@@ -88,6 +88,21 @@
 	height: 0;
 	overflow: hidden;
 }
+#pager {
+	display: table-cell;
+	position: fixed;
+	font-size: 80%;
+	left: 30px;
+	bottom: 45px;
+	float: left;
+	z-index: 20;
+	padding: 5px 5px 5px;
+}
+#pager span {
+	color: #0645ad;
+	padding: 1px 5px 1px;
+	font-weight: 600;
+}
 
 #searchBox {
 	display: inline;
