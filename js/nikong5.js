@@ -58,21 +58,21 @@ $(function(){
     $("#top-button-include").load("../../top-button.html #topButton");
 
     // Search box
-    $('#searchBox').on('input', function(e) {
-        var value = $(this).val();
-        $("#dataSet li").each(function () {
-            $(this).hide();
-            if ($(this).text().indexOf($.trim(value)) >= 0) {
-                $(this).show();
-            }
-        });
-        if('' == this.value) {
-            // $("#dataSet li").each(function () {
-            //     $(this).show();
-            // });
-            document.body.onload();
-        }
-    });
+    // $('#searchBox').on('input', function(e) {
+    //     var value = $(this).val();
+    //     $("#dataSet li").each(function () {
+    //         $(this).hide();
+    //         if ($(this).text().indexOf($.trim(value)) >= 0) {
+    //             $(this).show();
+    //         }
+    //     });
+    //     if('' == this.value) {
+    //         // $("#dataSet li").each(function () {
+    //         //     $(this).show();
+    //         // });
+    //         document.body.onload();
+    //     }
+    // });
     
 });
 

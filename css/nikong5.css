@@ -88,6 +88,28 @@
 	height: 0;
 	overflow: hidden;
 }
+
+/* rewrite for table-gainianlizhuang */
+.form-control {
+	display: inline;
+	font-family: Roboto-Medium;
+	font-size: 12px;
+	color: #999999;
+	background-color: rgb(229, 234, 236);
+	line-height: 1.5;
+	margin-left: 10px;
+	padding-left: 5px;
+	/* border-radius: 0; */
+	width: 200px;
+}
+.th-inner {
+	font-size: 75%;
+}
+.fixed-table-pagination {
+	font-size: 75%;
+}
+
+/*
 #pager {
 	display: table-cell;
 	position: fixed;
@@ -103,16 +125,4 @@
 	padding: 1px 5px 1px;
 	font-weight: 500;
 }
-
-#searchBox {
-	display: inline;
-	font-family: Roboto-Medium;
-	font-size: 12px;
-	color: #999999;
-	background-color: rgb(229, 234, 236);
-	line-height: 1.5;
-	margin-left: 10px;
-	padding-left: 5px;
-	/* border-radius: 0; */
-	width: 200px;
-}
+*/

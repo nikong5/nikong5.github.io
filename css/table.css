@@ -430,3 +430,7 @@ th, td {
 .table100.ver3 tr {
   
 }
+
+.th-inner {
+  font-size: 75%;
+}
