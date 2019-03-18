@@ -66,7 +66,7 @@ function craftFunc(value) {
 			},{
 				field: 'icon',
 				title: '图标',
-				width: 50
+				width: 40
 			},
 			{
 				field: 'name',

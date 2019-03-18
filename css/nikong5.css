@@ -102,8 +102,8 @@
 	/* border-radius: 0; */
 	width: 200px;
 }
-.th-inner {
-	font-size: 75%;
+.fixed-table-toolbar {
+	margin-top: -20px !important;
 }
 .fixed-table-pagination {
 	font-size: 75%;
