@@ -62,11 +62,11 @@ function craftFunc(value) {
 		columns: [{
 				field: 'no',
 				title: 'NO',
-				width: 40
+				width: 35
 			},{
 				field: 'icon',
-				title: '图标',
-				width: 40
+				title: '图',
+				width: 35
 			},
 			{
 				field: 'name',
@@ -75,18 +75,18 @@ function craftFunc(value) {
 			},
 			{
 				field: 'cost',
-				title: 'COS',
-				width: 40
+				title: '费',
+				width: 35
 			},
 			{
 				field: 'hp',
-				title: 'HP',
-				width: 40
+				title: '血',
+				width: 35
 			},
 			{
 				field: 'atk',
-				title: 'ATK',
-				width: 40
+				title: '攻',
+				width: 35
 			},
 			{
 				field: 'comment',
