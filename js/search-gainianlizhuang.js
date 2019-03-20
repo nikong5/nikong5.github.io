@@ -71,12 +71,12 @@ function craftFunc(value) {
 			{
 				field: 'name',
 				title: '名称',
-				width: 110
+				width: 100
 			},
 			{
 				field: 'cost',
-				title: 'COST',
-				width: 30
+				title: 'COS',
+				width: 40
 			},
 			{
 				field: 'hp',
