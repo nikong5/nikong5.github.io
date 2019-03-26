@@ -62,11 +62,11 @@ function craftFunc(value) {
 		columns: [{
 				field: 'no',
 				title: 'NO',
-				width: 40
+				width: 35
 			},{
 				field: 'icon',
 				title: '图标',
-				width: 40
+				width: 50
 			},
 			{
 				field: 'name',
