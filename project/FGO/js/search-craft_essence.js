@@ -1,7 +1,7 @@
 $(function() {
 	$("#table-gainianlizhuang").bootstrapTable(craftFunc());
 
-	$.get('input/gainianlizhuang.csv',function(data){
+	$.get('input/craft_essence.csv',function(data){
 		var dataList = [];
 		var csv = $.csv.toArrays(data);
 		if(!$.isEmptyObject(csv) && csv.length > 1) {
@@ -16,7 +16,7 @@ $(function() {
 					var indexIcon = strIcon.lastIndexOf("\/");
 					var strIconName = strIcon.substring(indexIcon + 1, strIcon.length); //截取最后一个斜杠后的字符串
 					obj["no"] = readIntoArray(strNo)[2]-1;
-					obj["icon"] = "<img src='img/gainianlizhuang/"+strIconName+"' width='23' height='23'>"
+					obj["icon"] = "<img src='img/gainianlizhuang/"+strIconName+"' width='23' height='23'>";
 					obj["name"] = objArr[2];
 					obj["cost"] = objArr[5];
 					obj["hp"] = objArr[6]+"<br>"+objArr[7];
@@ -31,7 +31,7 @@ $(function() {
     });
 });
 
-function craftFunc(value) {
+function craftFunc() {
 	var table = {
 		pagination: true, //设置为 true 会在表格底部显示分页条
 		pageSize: 50, //如果设置了分页，页面数据条数
@@ -63,7 +63,8 @@ function craftFunc(value) {
 				field: 'no',
 				title: 'NO',
 				width: 35
-			},{
+			},
+			{
 				field: 'icon',
 				title: '图标',
 				width: 50
@@ -92,32 +93,7 @@ function craftFunc(value) {
 				field: 'comment',
 				title: '详细',
 				width: 270
-			},
-		],
+			}],
 	}
 	return table;
 };
-
-// 以特殊字符为节点将字符串拆分成数组
-function readIntoArray(rawStr) {
-	const segments = [];
-	temp = '';
-	prevType = 0;
-	rawStr.split('').forEach((s) => {
-	let currentType = (s >= '0' && s <= '9') ? 1 : 2
-	if (currentType != prevType && temp != '') {
-	  if (segments.length > 1 && temp == '\n' && /\d+/.table(segments[segments.length-1])) {
-		  segments[segments.length-1] += temp;
-	  } else {
-		  segments.push(temp);
-	  }
-	  temp = s;
-	} else {
-	  temp += s;
-	}
-	prevType = currentType;
-	});
-	segments.push(temp);
-
-	return segments;
-}
