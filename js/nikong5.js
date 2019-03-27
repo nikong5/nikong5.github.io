@@ -53,7 +53,7 @@ $(function(){
     // Include
     $("#header-include").load("header.html #pageheader");
     $("#footer-include").load("footer.html #pagefooter");
-    $("#sub-header-include").load("../../sub-header.html #subPageheader");
+    $("#sub-header-fgo-include").load("../../sub-header-fgo.html #subPageheader");
     $("#sub-footer-include").load("../../footer.html #pagefooter");
     $("#top-button-include").load("../../top-button.html #topButton");
 
