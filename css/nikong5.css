@@ -127,17 +127,20 @@
 }
 */
 
+.com-table {
+	margin: 5px 0 5px 0;
+}
 .com-table th {
 	font-family: Roboto-Bold;
 	color: #333333;
-	font-size: 75%;
+	font-size: 70%;
 	white-space:nowrap;
 	padding: 5px 0 5px 5px;
 }
 .com-table td {
 	font-family: Roboto-Medium;
 	color: #999999;
-	font-size: 75%;
+	font-size: 70%;
 	white-space:nowrap;
 	padding: 5px 0 5px 5px;
 }
