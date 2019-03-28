@@ -144,3 +144,18 @@
 	white-space:nowrap;
 	padding: 5px 0 5px 5px;
 }
+.head-table tr {
+	height: 30px;
+}
+.body-table tr {
+	height: 30px;
+}
+.head-table-2 tr {
+	height: 20px;
+}
+.body-table-2 tr {
+	height: 20px;
+}
+.head-table-3 tr {
+	height: 60px;
+}

@@ -234,11 +234,13 @@ th, td {
 .column2-v2 {
   width: 60px;
   padding-left: 40px;
+  vertical-align: middle;
 }
 
 .column2-v2_1 {
   width: 60px;
   padding-left: 30px;
+  vertical-align: middle;
 }
 
 .column3-v2 {
