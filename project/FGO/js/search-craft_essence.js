@@ -39,7 +39,7 @@ function craftFunc() {
 		search: true, //是否启用搜索框
 		//showToggle:true, //是否显示 切换试图（table/card）按钮
 		//checkboxHeader:true, //设置false 将在列头隐藏check-all checkbox
-		//uniqueId: "id",
+		uniqueId: "no",
 		//searchText:"搜索", //初始化搜索文字
 		//selectItemName: "id",
 		//showHeader:true, //是否显示列头

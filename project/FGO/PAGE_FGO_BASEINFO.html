@@ -32,7 +32,12 @@
                 <a href="#congzhejingyan">从者经验</a><br>
                 <a href="#gainianlizhuangjingyan">概念礼装经验</a><br>
                 <a href="#qpxiaohao">QP消耗</a><br>
-                <a href="#shanghaigongshi">伤害公式</a><br>
+                <a href="#xiangxigongshi">详细公式</a><br>
+                <a href="#shanghaigongshi">&nbsp;・伤害公式</a><br>
+                <a href="#nphuode">&nbsp;・NP获得</a><br>
+                <a href="#baojixingdiaoluo">&nbsp;・暴击星掉落</a><br>
+                <a href="#baojixingjizhong">&nbsp;・暴击星集中</a><br>
+                <a href="#jisichenggonglv">&nbsp;・即死成功率</a><br>
             </ul>
         </div>
         
@@ -1248,8 +1253,11 @@
                 </tbody>
             </table>
             <br>
+            <a name="xiangxigongshi" class="hiddenA"></a>
+            <h3>详细公式</h3>
+            <br>
             <a name="shanghaigongshi" class="hiddenA"></a>
-            <h3>伤害公式</h3>
+            <h5>伤害公式</h5>
             <table class="table table-bordered com-table">
                 <thead>
                     <tr style="text-align:center;">
@@ -1325,14 +1333,14 @@
             <table class="table table-bordered com-table">
                 <thead>
                     <tr>
-                        <th>※参数注解</th>
+                        <th>参数注解</th>
                     </tr>
                 </thead>
                 <tbody style="font-size: 70%;">
                     <tr>
                         <td>
                             <p>1. 指令卡伤害倍率：详见下表（指令卡伤害倍率），宝具卡在任何位置都按第一张卡计算。</p>
-                            <table class="table table-bordered com-table" style="width:50%;margin-left:10px;">
+                            <table class="table table-bordered com-table" style="width:50%;margin-left:10px;font-size:120%;">
                                 <thead>
                                     <tr>
                                         <th>指令卡</th>
@@ -1394,6 +1402,478 @@
                             <p>18. 被伤害减免与提升：固定值，敌方受到的伤害减少/增加。</p>
                             <p>19. 宝具伤害不计首位加成，但首位宝具指令卡仍会给普通指令卡提供首位加成。</p>
                             <p>20. 全体宝具对多个目标伤害分别计算。</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <a name="nphuode" class="hiddenA"></a>
+            <h5>NP获得</h5>
+            <h7>一次攻击的各hit单独计算，再求和。</h7>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr style="text-align:center;">
+                        <th>每hit的NP获得公式</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NP率 * (指令卡补正 * (1 ± 指令卡性能BUFF ∓ 指令卡耐性) + 首位<br>加成) * 敌补正 * (1 ± NP获得量BUFF) * 暴击补正 * Overkill补正</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr style="text-align:center;">
+                        <th>每hit的受击NP获得公式</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>受击NP率 * 敌补正 * (1 ± NP获得量BUFF ± 受击NP获得量BUFF)<br> * Overkill补正</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr>
+                        <th>参数注解</th>
+                    </tr>
+                </thead>
+                <tbody style="font-size: 70%;">
+                    <tr>
+                        <td>
+                            <p>1. NP率：是从者基础数值，由从者的职阶、魔力、Arts指令卡数量及额外因素决定。</p>
+                            <p>2. 受击NP率：是从者基础数值，由从者的职阶及额外因素决定。</p>
+                            <p>3. 指令卡补正：详见下表（指令卡NP补正），宝具卡在任何位置都按第一张卡计算。</p>
+                            <table class="table table-bordered com-table" style="width:50%;margin-left:10px;font-size:120%;">
+                                <thead>
+                                    <tr>
+                                        <th>指令卡</th>
+                                        <th>第一顺位</th>
+                                        <th>第二顺位</th>
+                                        <th>第三顺位</th>
+                                        <th>第四顺位</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="../../project/FGO/img/baseinfo/Buster.png" width="13" height="13"></td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="../../project/FGO/img/baseinfo/Arts.png" width="13" height="13"></td>
+                                        <td>3</td>
+                                        <td>4.5</td>
+                                        <td>6</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="../../project/FGO/img/baseinfo/Quick.png" width="13" height="13"></td>
+                                        <td>1</td>
+                                        <td>1.5</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Extra</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>4. 指令卡性能BUFF：自身Buster、Arts、Quick指令卡性能提升/下降。</p>
+                            <p>5. 指令卡耐性：敌方对Buster、Arts、Quick指令卡的耐性。</p>
+                            <p>6. 首位加成：第1张卡为Arts时值为1，其他卡为0。</p>
+                            <p>7. 敌补正：详见下表（NP敌补正）。</p>
+                            <table class="table table-bordered com-table" style="width:90%;margin-left:10px;font-size:120%;">
+                                <thead>
+                                    <tr>
+                                        <th>职阶</th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Saber.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Archer.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Lancer.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Rider.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Caster.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Assassin.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Berserker.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Ruler.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Avenger.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Alterego.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡MoonCancer.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Foreigner.png" width="13" height="13"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>类型1</th>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1.1</td>
+                                        <td>1.2</td>
+                                        <td>0.9</td>
+                                        <td>0.8</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>1.2</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>类型2</th>
+                                        <td>1.2</td>
+                                        <td>1.2</td>
+                                        <td>1.2</td>
+                                        <td>1.32</td>
+                                        <td>1.44</td>
+                                        <td>1.08</td>
+                                        <td>0.96</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th>说明</th>
+                                        <td colspan="12">骷髅兵、龙牙兵、僵尸、鬼魂、七人御佐姬、雾绘属于类型2，其他敌人属于类型1，不排除有例外情况。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>8. NP获得量BUFF：自身的NP获得量提升/下降。</p>
+                            <p>9. 受击NP获得量BUFF：自身的受击NP获得量提升/下降。</p>
+                            <p>10. 暴击补正：暴击时值为2，否则为1，Extra攻击不会暴击。</p>
+                            <p>11. Overkill补正：攻击触发“Overkill”或“Overgauge”时值为1.5，否则为1。</p>
+                            <p>12. 攻击hit数：是从者基础数值。</p>
+                            <p>13. 全体宝具对多个目标的NP获得量分别计算并相加。
+                            <p>14. 数值为百分比，保留到小数点后2位。</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <a name="baojixingdiaoluo" class="hiddenA"></a>
+            <h5>暴击星掉落</h5>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr style="text-align:center;">
+                        <th>每hit的暴击星掉落公式</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>从者掉星率 + 指令卡掉星率 * (1 ± 指令卡性能BUFF ∓ 指令卡耐性)<br> + 首位加成 + 敌补正 ± 掉星率BUFF ± 敌人掉星率BUFF + 暴击补正<br> + Overkill补正</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr>
+                        <th>参数注解</th>
+                    </tr>
+                </thead>
+                <tbody style="font-size: 70%;">
+                    <tr>
+                        <td>
+                            <p>1. 从者掉星率：是从者基础数值，由从者的职阶、敏捷决定。</p>
+                            <p>2. 指令卡掉星率：详见下表（指令卡掉星率），宝具卡在任何位置都按第一张卡计算。</p>
+                            <table class="table table-bordered com-table" style="width:50%;margin-left:10px;font-size:120%;">
+                                <thead>
+                                    <tr>
+                                        <th>指令卡</th>
+                                        <th>第一顺位</th>
+                                        <th>第二顺位</th>
+                                        <th>第三顺位</th>
+                                        <th>第四顺位</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="../../project/FGO/img/baseinfo/Buster.png" width="13" height="13"></td>
+                                        <td>10%</td>
+                                        <td>15%</td>
+                                        <td>20%</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="../../project/FGO/img/baseinfo/Arts.png" width="13" height="13"></td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="../../project/FGO/img/baseinfo/Quick.png" width="13" height="13"></td>
+                                        <td>80%</td>
+                                        <td>130%</td>
+                                        <td>180%</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Extra</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>100%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>3. 指令卡性能BUFF：自身Buster、Arts、Quick指令卡性能提升/下降。</p>
+                            <p>4. 指令卡耐性：敌方对Buster、Arts、Quick指令卡的耐性。</p>
+                            <p>5. 首位加成：第1张卡为Quick时值为20%，其他卡为0。</p>
+                            <p>6. 敌补正：详见下表（暴击星敌补正）。</p>
+                            <table class="table table-bordered com-table" style="width:90%;margin-left:10px;font-size:120%;">
+                                <thead>
+                                    <tr>
+                                        <th>职阶</th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Saber.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Archer.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Lancer.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Rider.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Caster.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Assassin.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Berserker.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Ruler.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Avenger.png" width="13" height="13"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>数值</th>
+                                        <td>0</td>
+                                        <td>5%</td>
+                                        <td>-5%</td>
+                                        <td>10%</td>
+                                        <td>0</td>
+                                        <td>-10%</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>-10%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered com-table" style="width:90%;margin-left:10px;font-size:120%;">
+                                <thead>
+                                    <tr style="text-align:center;"><th colspan="10">敌人暴击率</th></tr>
+                                    <tr>
+                                        <th>职阶</th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Saber.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Archer.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Lancer.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Rider.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Caster.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Assassin.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Berserker.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Ruler.png" width="13" height="13"></th>
+                                        <th><img src="../../project/FGO/img/baseinfo/金卡Avenger.png" width="13" height="13"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>类型1</th>
+                                        <td>10%</td>
+                                        <td>20%</td>
+                                        <td>10%</td>
+                                        <td>15%</td>
+                                        <td>10%</td>
+                                        <td>30%</td>
+                                        <td>10%</td>
+                                        <td>10%</td>
+                                        <td>10%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>类型2</th>
+                                        <td>20%</td>
+                                        <td>-</td>
+                                        <td>20%</td>
+                                        <td>30%</td>
+                                        <td>-</td>
+                                        <td>60%</td>
+                                        <td>30%</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th>说明</th>
+                                        <td colspan="9">狼人、豹人、哥布林、双足飞龙、狂阶奇美拉属于类型2，其他敌人属于类型1，不排除有例外情况。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>7. 掉星率BUFF：自身的暴击星掉落率提升/下降。</p>
+                            <p>8. 敌人掉星率BUFF：敌方受到伤害时的暴击星掉落率提升/下降。</p>
+                            <p>9. 暴击补正：暴击时值为20%，否则为0。</p>
+                            <p>10. Overkill补正：攻击触发“Overkill”或“Overgauge”时值为30%，否则为0。</p>
+                            <p>11. 上限为300%。</p>
+                            <p>12. 百分比的整百部分为必定掉落，超过整百部分概率掉落。</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <a name="baojixingjizhong" class="hiddenA"></a>
+            <h5>暴击星集中</h5>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr style="text-align:center;">
+                        <th>暴击星集中度公式</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>从者暴击权重 * (1 ± 暴击星集中度BUFF ± 指令卡暴击星集中度<br>BUFF) + 随机权重</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr>
+                        <th>参数注解</th>
+                    </tr>
+                </thead>
+                <tbody style="font-size: 70%;">
+                    <tr>
+                        <td>
+                            <p>1. 从者集星权重：是从者基础数值，由从者的职阶、幸运决定。</p>
+                            <p>2. 暴击星集中度BUFF：自身暴击星集中度提升/下降。</p>
+                            <p>3. 指令卡暴击星集中度BUFF：自身一种指令卡暴击星集中度提升/下降。</p>
+                            <p>4. 随机权重：每回合5张指令卡随机分得50,20,20,0,0。</p>
+                            <p>5. 暴击星以指令卡为单位分配，各指令卡分配到暴击星的概率为(该指令卡暴击权重/</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;所有指令卡暴击权重之和)，每张指令卡最多分配到10个暴击星。</p>
+                            <table class="table table-bordered com-table" style="width:50%;margin-left:10px;font-size:120%;">
+                                <thead>
+                                    <tr style="text-align:center;"><th colspan="6">从者集星权重排名 Top10</th></tr>
+                                    <tr>
+                                        <th>从者</th>
+                                        <th>从者集星权重</th>
+                                        <th>技能集星倍率</th>
+                                        <th>综合集星权重 ↓</th>
+                                        <th>持续回合</th>
+                                        <th>CD</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th><img src="../../project/FGO/img/servant/Servant121.jpg" width="13" height="13"></th>
+                                        <td>100</td>
+                                        <td>60</td>
+                                        <td>6100</td>
+                                        <td>3</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <th><img src="../../project/FGO/img/servant/Servant014.jpg" width="13" height="13"></th>
+                                        <td>148</td>
+                                        <td>10</td>
+                                        <td>1628</td>
+                                        <td>1</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <th><img src="../../project/FGO/img/servant/Servant144.jpg" width="13" height="13"></th>
+                                        <td>205</td>
+                                        <td>6</td>
+                                        <td>1435</td>
+                                        <td>1</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <th><img src="../../project/FGO/img/servant/Servant066.jpg" width="13" height="13"></th>
+                                        <td>200</td>
+                                        <td>6</td>
+                                        <td>1400</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <th><img src="../../project/FGO/img/servant/Servant068.jpg" width="13" height="13"></th>
+                                        <td>200</td>
+                                        <td>6</td>
+                                        <td>1400</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <th><img src="../../project/FGO/img/servant/Servant197.jpg" width="13" height="13"></th>
+                                        <td>153</td>
+                                        <td>6</td>
+                                        <td>1071</td>
+                                        <td>3</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <th><img src="../../project/FGO/img/servant/Servant156.jpg" width="13" height="13"></th>
+                                        <td>153</td>
+                                        <td>6</td>
+                                        <td>1071</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <th><img src="../../project/FGO/img/servant/Servant184.jpg" width="13" height="13"></th>
+                                        <td>153</td>
+                                        <td>6</td>
+                                        <td>1071</td>
+                                        <td>3</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <th><img src="../../project/FGO/img/servant/Servant131.jpg" width="13" height="13"></th>
+                                        <td>153</td>
+                                        <td>6</td>
+                                        <td>1071</td>
+                                        <td>1</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <th><img src="../../project/FGO/img/servant/Servant012.jpg" width="13" height="13"></th>
+                                        <td>153</td>
+                                        <td>6</td>
+                                        <td>1071</td>
+                                        <td>3</td>
+                                        <td>5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <a name="jisichenggonglv" class="hiddenA"></a>
+            <h5>即死成功率</h5>
+            <h7>如果即死的触发者与即死的作用者为同一人，则强制即死（即使存在即死无效的BUFF），以下公式不适用。</h7>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr style="text-align:center;">
+                        <th>即死成功率公式</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>即死效果率 * 即死率 * (1 ± 即死成功率BUFF ∓ 即死耐性BUFF)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr>
+                        <th>参数注解</th>
+                    </tr>
+                </thead>
+                <tbody style="font-size: 70%;">
+                    <tr>
+                        <td>
+                            <p>1. 即死效果率：技能或宝具发动即死效果的概率。</p>
+                            <p>2. 即死率：即死对象的基础数值，我方从者的即死率由职阶、魔力决定，</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;敌方影从者的即死率为10%，敌方从者的即死率为0～0.2%。</p>
+                            <p>3. 即死成功率BUFF：自身即死付与成功率提升/下降。</p>
+                            <p>4. 即死耐性BUFF：敌方即死耐性提升/下降。</p>
                         </td>
                     </tr>
                 </tbody>
