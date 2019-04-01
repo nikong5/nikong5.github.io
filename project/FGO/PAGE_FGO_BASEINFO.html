@@ -38,6 +38,11 @@
                 <a href="#baojixingdiaoluo">&nbsp;・暴击星掉落</a><br>
                 <a href="#baojixingjizhong">&nbsp;・暴击星集中</a><br>
                 <a href="#jisichenggonglv">&nbsp;・即死成功率</a><br>
+                <a href="#congzhejichucanshu">从者基础参数</a><br>
+                <a href="#mianbanshuju">&nbsp;・面板数据</a><br>
+                <a href="#atkjihp">&nbsp;・ATK及HP</a><br>
+                <a href="#qita">&nbsp;・其他</a><br>
+                <a href="#jisuangongshi">&nbsp;・计算公式</a><br>
             </ul>
         </div>
         
@@ -1875,6 +1880,424 @@
                             <p>3. 即死成功率BUFF：自身即死付与成功率提升/下降。</p>
                             <p>4. 即死耐性BUFF：敌方即死耐性提升/下降。</p>
                         </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <a name="congzhejichucanshu" class="hiddenA"></a>
+            <h3>从者基础参数</h5>
+            <br>
+            <a name="mianbanshuju" class="hiddenA"></a>
+            <h5>面板数据</h5>
+            <table class="table table-bordered com-table" style="font-size:30%;">
+                <thead>
+                    <tr style="text-align:center;">
+                        <th colspan="17">面板补正</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>面板</th>
+                        <th>EX</th>
+                        <th>A++</th>
+                        <th>A+</th>
+                        <th>A</th>
+                        <th>A-</th>
+                        <th>B++</th>
+                        <th>B+</th>
+                        <th>B</th>
+                        <th>C++</th>
+                        <th>C+</th>
+                        <th>C</th>
+                        <th>D++</th>
+                        <th>D+</th>
+                        <th>D</th>
+                        <th>E+</th>
+                        <th>E</th>
+                    </tr>
+                    <tr>
+                        <th>通用</th>
+                        <td>1.04</td>
+                        <td>1.03</td>
+                        <td>1.025</td>
+                        <td>1.02</td>
+                        <td>1.015</td>
+                        <td>1.01</td>
+                        <td>1.005</td>
+                        <td>1.00</td>
+                        <td>0.995</td>
+                        <td>0.9925</td>
+                        <td>0.99</td>
+                        <td>0.985</td>
+                        <td>0.9825</td>
+                        <td>0.98</td>
+                        <td>0.9725</td>
+                        <td>0.97</td>
+                    </tr>
+                    <tr>
+                        <th>魔力</th>
+                        <td>0.5</td>
+                        <td>0.55</td>
+                        <td>0.575</td>
+                        <td>0.6</td>
+                        <td>0.625</td>
+                        <td>0.65</td>
+                        <td>0.675</td>
+                        <td>0.7</td>
+                        <td>0.75</td>
+                        <td>0.775</td>
+                        <td>0.8</td>
+                        <td>0.85</td>
+                        <td>0.875</td>
+                        <td>0.9</td>
+                        <td>0.975</td>
+                        <td>1.0</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <a name="atkjihp" class="hiddenA"></a>
+            <h5>ATK及HP</h5>
+            <h7>※特殊从者“安格拉曼纽”参照2★数据。</h7>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr style="text-align:center;">
+                        <th colspan="6">星级基础值</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>星级</th>
+                        <th>1★</th>
+                        <th>2★</th>
+                        <th>3★</th>
+                        <th>4★</th>
+                        <th>5★</th>
+                    </tr>
+                    <tr>
+                        <th>最大HP</th>
+                        <td>7500</td>
+                        <td>8500</td>
+                        <td>10000</td>
+                        <td>12500</td>
+                        <td>15000</td>
+                    </tr>
+                    <tr>
+                        <th>最大ATK</th>
+                        <td>5500</td>
+                        <td>6200</td>
+                        <td>7000</td>
+                        <td>9000</td>
+                        <td>11000</td>
+                    </tr>
+                    <tr>
+                        <th>初始HP</th>
+                        <td>1500</td>
+                        <td>1600</td>
+                        <td>1800</td>
+                        <td>2000</td>
+                        <td>2200</td>
+                    </tr>
+                    <tr>
+                        <th>初始ATK</th>
+                        <td>1000</td>
+                        <td>1100</td>
+                        <td>1300</td>
+                        <td>1500</td>
+                        <td>1700</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered com-table" style="font-size:50%;">
+                <thead>
+                    <tr>
+                        <tr style="text-align:center;">
+                            <th colspan="15">职阶补正</th>
+                        </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>职阶</th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Saber.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Archer.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Lancer.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Rider.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Caster.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Assassin.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Berserker.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Ruler.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Avenger.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Alterego.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡MoonCancer.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Foreigner.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Shielder.png" width="13" height="13"></th>
+                    </tr>
+                    <tr>
+                        <th>HP</th>
+                        <td>1.01</td>
+                        <td>0.98</td>
+                        <td>1.02</td>
+                        <td>0.96</td>
+                        <td>0.98</td>
+                        <td>0.95</td>
+                        <td>0.90</td>
+                        <td>1.00</td>
+                        <td>0.88</td>
+                        <td>0.95</td>
+                        <td>1.05</td>
+                        <td>1.00</td>
+                        <td>1.01</td>
+                    </tr>
+                    <tr>
+                        <th>ATK</th>
+                        <td>1.01</td>
+                        <td>1.02</td>
+                        <td>0.98</td>
+                        <td>0.97</td>
+                        <td>0.94</td>
+                        <td>0.96</td>
+                        <td>1.03</td>
+                        <td>0.95</td>
+                        <td>0.94</td>
+                        <td>1.05</td>
+                        <td>1.02</td>
+                        <td>1.00</td>
+                        <td>0.99</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr style="text-align:center;">
+                        <th colspan="7">攻击倾向补正</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>类型</th>
+                        <th>全HP</th>
+                        <th>偏HP</th>
+                        <th>均衡</th>
+                        <th>偏ATK</th>
+                        <th>全ATK</th>
+                        <th><img src="../../project/FGO/img/servant/Servant004.jpg" width="13" height="13"></th>
+                    </tr>
+                    <tr>
+                        <th>HP</th>
+                        <td>1.10</td>
+                        <td>1.05</td>
+                        <td>1.00</td>
+                        <td>0.95</td>
+                        <td>0.90</td>
+                        <td>0.85</td>
+                    </tr>
+                    <tr>
+                        <th>ATK</th>
+                        <td>0.90</td>
+                        <td>0.95</td>
+                        <td>1.00</td>
+                        <td>1.05</td>
+                        <td>1.10</td>
+                        <td>0.85</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr style="text-align:center;">
+                        <th colspan="6">等级补正</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>星级</th>
+                        <th>1★</th>
+                        <th>2★</th>
+                        <th>3★</th>
+                        <th>4★</th>
+                        <th>5★</th>
+                    </tr>
+                    <tr>
+                        <th>补正到Lv.90</th>
+                        <td>1.508</td>
+                        <td>1.390</td>
+                        <td>1.289</td>
+                        <td>1.126</td>
+                        <td>1.000</td>
+                    </tr>
+                    <tr>
+                        <th>补正到Lv.100</th>
+                        <td>1.677</td>
+                        <td>1.546</td>
+                        <td>1.434</td>
+                        <td>1.253</td>
+                        <td>1.112</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <a name="qita" class="hiddenA"></a>
+            <h5>其他</h5>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr style="text-align:center;">
+                        <th colspan="14">其他基础值</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>职阶</th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Saber.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Archer.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Lancer.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Rider.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Caster.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Assassin.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Berserker.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Ruler.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Avenger.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Alterego.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡MoonCancer.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Foreigner.png" width="13" height="13"></th>
+                        <th><img src="../../project/FGO/img/baseinfo/金卡Shielder.png" width="13" height="13"></th>
+                    </tr>
+                    <tr>
+                        <th>出星率</th>
+                        <td>10</td>
+                        <td>8</td>
+                        <td>12</td>
+                        <td>9</td>
+                        <td>11</td>
+                        <td>25</td>
+                        <td>5</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>15</td>
+                        <td>10</td>
+                        <td>15</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <th>集星权重</th>
+                        <td>100</td>
+                        <td>150</td>
+                        <td>90</td>
+                        <td>200</td>
+                        <td>50</td>
+                        <td>100</td>
+                        <td>10</td>
+                        <td>100</td>
+                        <td>30</td>
+                        <td>50</td>
+                        <td>100</td>
+                        <td>150</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <th>被即死率</th>
+                        <td>35</td>
+                        <td>45</td>
+                        <td>40</td>
+                        <td>50</td>
+                        <td>60</td>
+                        <td>55</td>
+                        <td>65</td>
+                        <td>35</td>
+                        <td>10</td>
+                        <td>1</td>
+                        <td>50</td>
+                        <td>10</td>
+                        <td>35</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <a name="jisuangongshi" class="hiddenA"></a>
+            <h5>计算公式</h5>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr style="text-align:center;">
+                        <th>最大HP计算</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>最大HP=基础值*职阶补正*攻击倾向补正*耐久补正</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr style="text-align:center;">
+                        <th>最大ATK计算</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>(物理系)最大ATK=基础值*职阶补正*攻击倾向补正*筋力补正<br>*敏捷魔力补正*(1-(筋力补正-1)*(敏捷魔力补正-1))</td>
+                    </tr>
+                    <tr>
+                        <td>(魔法系)最大ATK=基础值*职阶补正*攻击倾向补正*魔力补正</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr style="text-align:center;">
+                        <th>初始HP/ATK计算</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>与最大HP/ATK公式一致，仅基础值不同。</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr style="text-align:center;">
+                        <th>圣杯转临计算</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>补正值=初始值+(最大值-初始值)*等级补正</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr style="text-align:center;">
+                        <th>出星率计算</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>出星率=基础值*敏捷补正</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr style="text-align:center;">
+                        <th>集星权重计算</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>集星权重=基础值*幸运补正</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr style="text-align:center;">
+                        <th>被即死率计算</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>被即死率=基础值*魔力补正</td>
                     </tr>
                 </tbody>
             </table>
