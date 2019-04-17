@@ -162,3 +162,8 @@
 .head-table-3 tr {
 	height: 60px;
 }
+
+/* font color customize */
+.RED {
+	color: red;
+}
