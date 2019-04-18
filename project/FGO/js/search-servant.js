@@ -101,7 +101,7 @@ function servantFunc() {
 				field: 'atk',
 				title: 'ATK',
 				width: 40
-			}],
+			}]
 	}
 	return table;
 };

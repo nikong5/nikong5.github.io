@@ -93,7 +93,7 @@ function craftFunc() {
 				field: 'comment',
 				title: '详细',
 				width: 270
-			}],
+			}]
 	}
 	return table;
 };

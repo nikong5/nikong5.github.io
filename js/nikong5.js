@@ -54,6 +54,7 @@ $(function(){
     $("#header-include").load("header.html #pageheader");
     $("#footer-include").load("footer.html #pagefooter");
     $("#sub-header-fgo-include").load("../../sub-header-fgo.html #subPageheader");
+    $("#sub-header-dl-include").load("../../sub-header-dl.html #subPageheader");
     $("#sub-footer-include").load("../../footer.html #pagefooter");
     $("#top-button-include").load("../../top-button.html #topButton");
 
