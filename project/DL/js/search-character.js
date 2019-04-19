@@ -36,12 +36,12 @@ $(function() {
 					obj["rare"] = "<img src='img/character/"+strRare+"' width='13' height='13'>";
 					obj["element"] = "<img src='img/character/"+strElement+"' width='13' height='13'>";
 					obj["weapon"] = "<img src='img/character/"+strWeapon+"' width='13' height='13'>";
-					obj["skill1"] = "<img src='img/character/"+strSkill1+"' width='13' height='13'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-4px;'>"+strSkill1Name+"</nobr>";
-					obj["skill2"] = "<img src='img/character/"+strSkill2+"' width='13' height='13'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-4px;'>"+strSkill2Name+"</nobr>";
-					obj["ex"] = "<img src='img/character/"+strEx+"' width='13' height='13'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;color:red;'>"+strExName+"</nobr>";
-					obj["ability1"] = "<img src='img/character/"+strAbility1+"' width='13' height='13'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-8px;'>"+strAbility1Name+"</nobr>";
-					obj["ability2"] = "<img src='img/character/"+strAbility2+"' width='13' height='13'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-8px;'>"+strAbility2Name+"</nobr>";
-					obj["ability3"] = "<img src='img/character/"+strAbility3+"' width='13' height='13'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-8px;'>"+strAbility3Name+"</nobr>";
+					obj["skill1"] = "<img src='img/character/"+strSkill1+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strSkill1Name+"</nobr>";
+					obj["skill2"] = "<img src='img/character/"+strSkill2+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strSkill2Name+"</nobr>";
+					obj["ex"] = "<img src='img/character/"+strEx+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;color:red;'>"+strExName+"</nobr>";
+					obj["ability1"] = "<img src='img/character/"+strAbility1+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strAbility1Name+"</nobr>";
+					obj["ability2"] = "<img src='img/character/"+strAbility2+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strAbility2Name+"</nobr>";
+					obj["ability3"] = "<img src='img/character/"+strAbility3+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strAbility3Name+"</nobr>";
 					obj["hp"] = strHp;
 					obj["atk"] = strAtk;
 					obj["type"] = "<img src='img/character/"+strType+"' width='15' height='15'>";
@@ -93,32 +93,32 @@ function characterFunc() {
 			{
 				field: 'skill1',
 				title: '技1',
-				width: 40
+				width: 50
 			},
 			{
 				field: 'skill2',
 				title: '技2',
-				width: 40
+				width: 50
 			},
 			{
 				field: 'ex',
 				title: 'EX',
-				width: 40
+				width: 50
 			},
 			{
 				field: 'ability1',
 				title: '被1',
-				width: 40
+				width: 50
 			},
 			{
 				field: 'ability2',
 				title: '被2',
-				width: 40
+				width: 50
 			},
 			{
 				field: 'ability3',
 				title: '被3',
-				width: 40
+				width: 50
 			},
 			{
 				field: 'hp',
