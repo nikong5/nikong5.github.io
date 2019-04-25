@@ -63,7 +63,7 @@ function characterFunc() {
 		pageSize: 50, //如果设置了分页，页面数据条数
 		cache: true,
 		search: true, //是否启用搜索框
-		uniqueId: "no",
+		uniqueId: "icon",
 		sortable: true, //是否启用排序
 		sortOrder: "asc", //排序方式
 		sortName: "icon", //需要排序的字段
