@@ -178,39 +178,22 @@ function characterFuncBranchSelect(selElement,selWeapon) {
 					var strAtk = objArr[8];
 					var strType = objArr[3];
 
-					if(strElement==selElement){
-						obj["icon"] = "<img src='img/character/"+strIcon+"' width='23' height='23'>";
-						obj["name"] = strName;
-						obj["rare"] = "<img src='img/character/"+strRare+"' width='13' height='13'>";
-						obj["element"] = "<img src='img/character/"+strElement+"' width='13' height='13'>";
-						obj["weapon"] = "<img src='img/character/"+strWeapon+"' width='13' height='13'>";
-						obj["skill1"] = "<img src='img/character/"+strSkill1+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strSkill1Name+"</nobr>";
-						obj["skill2"] = "<img src='img/character/"+strSkill2+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strSkill2Name+"</nobr>";
-						obj["ex"] = "<img src='img/character/"+strEx+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;color:red;'>"+strExName+"</nobr>";
-						obj["ability1"] = "<img src='img/character/"+strAbility1+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strAbility1Name+"</nobr>";
-						obj["ability2"] = "<img src='img/character/"+strAbility2+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strAbility2Name+"</nobr>";
-						obj["ability3"] = "<img src='img/character/"+strAbility3+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strAbility3Name+"</nobr>";
-						obj["hp"] = strHp;
-						obj["atk"] = strAtk;
-						obj["type"] = "<img src='img/character/"+strType+"' width='15' height='15'>";
-						dataList.push(obj);
-					}
+					obj["icon"] = "<img src='img/character/"+strIcon+"' width='23' height='23'>";
+					obj["name"] = strName;
+					obj["rare"] = "<img src='img/character/"+strRare+"' width='13' height='13'>";
+					obj["element"] = "<img src='img/character/"+strElement+"' width='13' height='13'>";
+					obj["weapon"] = "<img src='img/character/"+strWeapon+"' width='13' height='13'>";
+					obj["skill1"] = "<img src='img/character/"+strSkill1+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strSkill1Name+"</nobr>";
+					obj["skill2"] = "<img src='img/character/"+strSkill2+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strSkill2Name+"</nobr>";
+					obj["ex"] = "<img src='img/character/"+strEx+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;color:red;'>"+strExName+"</nobr>";
+					obj["ability1"] = "<img src='img/character/"+strAbility1+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strAbility1Name+"</nobr>";
+					obj["ability2"] = "<img src='img/character/"+strAbility2+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strAbility2Name+"</nobr>";
+					obj["ability3"] = "<img src='img/character/"+strAbility3+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strAbility3Name+"</nobr>";
+					obj["hp"] = strHp;
+					obj["atk"] = strAtk;
+					obj["type"] = "<img src='img/character/"+strType+"' width='15' height='15'>";
 
-					if(strWeapon==selWeapon){
-						obj["icon"] = "<img src='img/character/"+strIcon+"' width='23' height='23'>";
-						obj["name"] = strName;
-						obj["rare"] = "<img src='img/character/"+strRare+"' width='13' height='13'>";
-						obj["element"] = "<img src='img/character/"+strElement+"' width='13' height='13'>";
-						obj["weapon"] = "<img src='img/character/"+strWeapon+"' width='13' height='13'>";
-						obj["skill1"] = "<img src='img/character/"+strSkill1+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strSkill1Name+"</nobr>";
-						obj["skill2"] = "<img src='img/character/"+strSkill2+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strSkill2Name+"</nobr>";
-						obj["ex"] = "<img src='img/character/"+strEx+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;color:red;'>"+strExName+"</nobr>";
-						obj["ability1"] = "<img src='img/character/"+strAbility1+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strAbility1Name+"</nobr>";
-						obj["ability2"] = "<img src='img/character/"+strAbility2+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strAbility2Name+"</nobr>";
-						obj["ability3"] = "<img src='img/character/"+strAbility3+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strAbility3Name+"</nobr>";
-						obj["hp"] = strHp;
-						obj["atk"] = strAtk;
-						obj["type"] = "<img src='img/character/"+strType+"' width='15' height='15'>";
+					if(strElement==selElement || strWeapon==selWeapon || selElement=='ALL'){
 						dataList.push(obj);
 					}
 				}

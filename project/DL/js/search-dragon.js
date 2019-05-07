@@ -140,31 +140,18 @@ function dragonFuncBranchSelect(selElement,selType) {
 					var strAtk = objArr[6];
 					var strType = objArr[13];
 
-					if(strElement==selElement){
-						obj["icon"] = "<img src='img/dragon/"+strIcon+"' width='23' height='23'>";
-						obj["name"] = strName;
-						obj["rare"] = "<img src='img/dragon/"+strRare+"' width='13' height='13'>";
-						obj["element"] = "<img src='img/dragon/"+strElement+"' width='13' height='13'>";
-						obj["skill1"] = "<img src='img/dragon/"+strSkill1+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strSkill1Name+"</nobr>";
-						obj["ability1"] = "<img src='img/dragon/"+strAbility1+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strAbility1Name+"</nobr>";
-						obj["ability2"] = "<img src='img/dragon/"+strAbility2+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strAbility2Name+"</nobr>";
-						obj["hp"] = strHp;
-						obj["atk"] = strAtk;
-						obj["type"] = "<img src='img/dragon/"+strType+"' width='15' height='15'>";
-						dataList.push(obj);
-					}
+					obj["icon"] = "<img src='img/dragon/"+strIcon+"' width='23' height='23'>";
+					obj["name"] = strName;
+					obj["rare"] = "<img src='img/dragon/"+strRare+"' width='13' height='13'>";
+					obj["element"] = "<img src='img/dragon/"+strElement+"' width='13' height='13'>";
+					obj["skill1"] = "<img src='img/dragon/"+strSkill1+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strSkill1Name+"</nobr>";
+					obj["ability1"] = "<img src='img/dragon/"+strAbility1+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strAbility1Name+"</nobr>";
+					obj["ability2"] = "<img src='img/dragon/"+strAbility2+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strAbility2Name+"</nobr>";
+					obj["hp"] = strHp;
+					obj["atk"] = strAtk;
+					obj["type"] = "<img src='img/dragon/"+strType+"' width='15' height='15'>";
 
-					if(strType==selType){
-						obj["icon"] = "<img src='img/dragon/"+strIcon+"' width='23' height='23'>";
-						obj["name"] = strName;
-						obj["rare"] = "<img src='img/dragon/"+strRare+"' width='13' height='13'>";
-						obj["element"] = "<img src='img/dragon/"+strElement+"' width='13' height='13'>";
-						obj["skill1"] = "<img src='img/dragon/"+strSkill1+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strSkill1Name+"</nobr>";
-						obj["ability1"] = "<img src='img/dragon/"+strAbility1+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strAbility1Name+"</nobr>";
-						obj["ability2"] = "<img src='img/dragon/"+strAbility2+"' width='23' height='23'>"+"<br>"+"<nobr style='font-size:7px;margin-left:-10px;'>"+strAbility2Name+"</nobr>";
-						obj["hp"] = strHp;
-						obj["atk"] = strAtk;
-						obj["type"] = "<img src='img/dragon/"+strType+"' width='15' height='15'>";
+					if(strElement==selElement || strType==selType || selElement=='ALL'){
 						dataList.push(obj);
 					}
 				}
