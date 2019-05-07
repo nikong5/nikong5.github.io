@@ -12,26 +12,26 @@ $(function() {
 					var obj = {};
 					var objArr = (String(values)).split(",");
 					
-					var strIcon = objArr[1];
-					var strName = objArr[0];
-					var strRare = objArr[3];
-					var strElement = objArr[4];
-					var strWeapon = objArr[5];
-					var strSkill1 = objArr[8];
-					var strSkill1Name = objArr[9];
-					var strSkill2 = objArr[10];
-					var strSkill2Name = objArr[11];
-					var strEx = objArr[12];
-					var strExName = objArr[13];
-					var strAbility1 = objArr[14];
-					var strAbility1Name = objArr[15];
-					var strAbility2 = objArr[16];
-					var strAbility2Name = objArr[17];
-					var strAbility3 = objArr[18];
-					var strAbility3Name = objArr[19];
-					var strHp = objArr[6];
-					var strAtk = objArr[7];
-					var strType = objArr[2];
+					var strIcon = objArr[2];
+					var strName = objArr[1];
+					var strRare = objArr[4];
+					var strElement = objArr[5];
+					var strWeapon = objArr[6];
+					var strSkill1 = objArr[9];
+					var strSkill1Name = objArr[10];
+					var strSkill2 = objArr[11];
+					var strSkill2Name = objArr[12];
+					var strEx = objArr[13];
+					var strExName = objArr[14];
+					var strAbility1 = objArr[15];
+					var strAbility1Name = objArr[16];
+					var strAbility2 = objArr[17];
+					var strAbility2Name = objArr[18];
+					var strAbility3 = objArr[19];
+					var strAbility3Name = objArr[20];
+					var strHp = objArr[7];
+					var strAtk = objArr[8];
+					var strType = objArr[3];
 
 					obj["icon"] = "<img src='img/character/"+strIcon+"' width='23' height='23'>";
 					obj["name"] = strName;
@@ -94,6 +94,21 @@ function characterFunc() {
 				width: 40
 			},
 			{
+				field: 'hp',
+				title: 'HP',
+				width: 40
+			},
+			{
+				field: 'atk',
+				title: 'ATK',
+				width: 40
+			},
+			{
+				field: 'type',
+				title: '类型',
+				width: 40
+			},
+			{
 				field: 'skill1',
 				title: '技1',
 				width: 50
@@ -122,21 +137,6 @@ function characterFunc() {
 				field: 'ability3',
 				title: '被3',
 				width: 50
-			},
-			{
-				field: 'hp',
-				title: 'HP',
-				width: 40
-			},
-			{
-				field: 'atk',
-				title: 'ATK',
-				width: 40
-			},
-			{
-				field: 'type',
-				title: '类型',
-				width: 40
 			}]
 	}
 	return table;
@@ -157,26 +157,26 @@ function characterFuncBranchSelect(selElement,selWeapon) {
 					var obj = {};
 					var objArr = (String(values)).split(",");
 					
-					var strIcon = objArr[1];
-					var strName = objArr[0];
-					var strRare = objArr[3];
-					var strElement = objArr[4];
-					var strWeapon = objArr[5];
-					var strSkill1 = objArr[8];
-					var strSkill1Name = objArr[9];
-					var strSkill2 = objArr[10];
-					var strSkill2Name = objArr[11];
-					var strEx = objArr[12];
-					var strExName = objArr[13];
-					var strAbility1 = objArr[14];
-					var strAbility1Name = objArr[15];
-					var strAbility2 = objArr[16];
-					var strAbility2Name = objArr[17];
-					var strAbility3 = objArr[18];
-					var strAbility3Name = objArr[19];
-					var strHp = objArr[6];
-					var strAtk = objArr[7];
-					var strType = objArr[2];
+					var strIcon = objArr[2];
+					var strName = objArr[1];
+					var strRare = objArr[4];
+					var strElement = objArr[5];
+					var strWeapon = objArr[6];
+					var strSkill1 = objArr[9];
+					var strSkill1Name = objArr[10];
+					var strSkill2 = objArr[11];
+					var strSkill2Name = objArr[12];
+					var strEx = objArr[13];
+					var strExName = objArr[14];
+					var strAbility1 = objArr[15];
+					var strAbility1Name = objArr[16];
+					var strAbility2 = objArr[17];
+					var strAbility2Name = objArr[18];
+					var strAbility3 = objArr[19];
+					var strAbility3Name = objArr[20];
+					var strHp = objArr[7];
+					var strAtk = objArr[8];
+					var strType = objArr[3];
 
 					if(strElement==selElement){
 						obj["icon"] = "<img src='img/character/"+strIcon+"' width='23' height='23'>";
