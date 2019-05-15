@@ -47,7 +47,7 @@ function craftFunc() {
 		//showRefresh: true, //是否显示 刷新按钮
 		//showColumns: true, //是否显示 内容列下拉框
 		sortable: true, //是否启用排序
-		sortOrder: "asc", //排序方式
+		sortOrder: "desc", //排序方式
 		sortName: "no", //需要排序的字段
 		//clickToSelect:false, //设置true 将在点击行时，自动选择rediobox 和 checkbox
 

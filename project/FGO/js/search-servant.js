@@ -55,7 +55,7 @@ function servantFunc() {
 		search: true, //是否启用搜索框
 		uniqueId: "no",
 		sortable: true, //是否启用排序
-		sortOrder: "asc", //排序方式
+		sortOrder: "desc", //排序方式
 		sortName: "no", //需要排序的字段
 		columns: [{
 				field: 'no',
