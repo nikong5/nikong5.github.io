@@ -51,6 +51,7 @@ Zephyr_Imp,气魔,210068_01.png,Icon_Rarity_3.png,Icon_Element_Wind.png,187,60,I
 Astral_Imp,星魔,210069_01.png,Icon_Rarity_3.png,Icon_Element_Light.png,188,59,Icon_Skill_030.png,群攻25%,Icon_Ability_1020006.png,攻8%/血8%,none.png,,Icon_Type_Support.png,
 Pallid_Imp,墓魔,210070_01.png,Icon_Rarity_3.png,Icon_Element_Shadow.png,186,61,Icon_Skill_014.png,目标x2,Icon_Ability_1020006.png,攻8%/血8%,none.png,,Icon_Type_Support.png,
 Maritimus,玛利蒂姆斯,210072_01.png,Icon_Rarity_5.png,Icon_Element_Shadow.png,224,73,Icon_Skill_013.png,前方x5/冰冻,Icon_Ability_1020006.png,攻15%/血15%,none.png,,Icon_Type_Support.png,
+Yulong,玉龙,210074_01.png,Icon_Rarity_5.png,Icon_Element_Wind.png,225,72,Icon_Skill_018.png,周围x3,Icon_Ability_1020002.png,攻30%,none.png,,Icon_Type_Attack.png,
 Halloween_Silke,希露姬(万圣节),210075_01.png,Icon_Rarity_4.png,Icon_Element_Light.png,301,95,Icon_Skill_018.png,周围x1/减攻15,Icon_Ability_1020006.png,攻20%/血20%,none.png,,Icon_Type_Support.png,
 Dragonyule_Jeanne,贞德(星龙祭),210076_01.png,Icon_Rarity_5.png,Icon_Element_Water.png,370,125,Icon_Skill_028.png,前方x3/冰冻,Icon_Ability_1020002.png,攻45%/爆率20,none.png,,Icon_Type_Support.png,
 Marishiten,摩利支天,210077_01.png,Icon_Rarity_5.png,Icon_Element_Shadow.png,374,121,Icon_Skill_803.png,前方x6/裂伤,Icon_Ability_1020002.png,攻60%,none.png,,Icon_Type_Attack.png,
