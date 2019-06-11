@@ -43,15 +43,17 @@
 }
 
 [aria-label][role~="tooltip"]::after {
-  background: rgba(17, 17, 17, .9);
+  background: rgba(105, 101, 101, 0.9);
   border-radius: 4px;
   color: #ffffff;
   content: attr(aria-label);
-  font-size: var(--microtip-font-size, 13px);
+  font-size: var(--microtip-font-size, 11px);
   font-weight: var(--microtip-font-weight, normal);
   text-transform: var(--microtip-text-transform, none);
   padding: .5em 1em;
-  white-space: nowrap;
+  width:-webkit-fit-content;
+  white-space: pre;
+  text-align: left;
   box-sizing: content-box;
 }
 
