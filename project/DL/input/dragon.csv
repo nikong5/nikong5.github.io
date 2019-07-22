@@ -24,6 +24,7 @@ Kindling_Imp,烛魔,210023_01.png,Icon_Rarity_3.png,Icon_Element_Flame.png,187,6
 Cerberus,坎贝萝丝,210024_01.png,Icon_Rarity_5.png,Icon_Element_Flame.png,369,127,Icon_Skill_022.png,目7/烧/减攻防,Icon_Ability_1020002.png,攻60%,none.png,,Icon_Type_Attack.png,
 Poseidon,波塞冬,210025_01.png,Icon_Rarity_5.png,Icon_Element_Water.png,376,119,Icon_Skill_020.png,目标x3,Icon_Ability_1020006.png,攻30%/血30%,none.png,,Icon_Type_Support.png,
 Pazuzu,帕祖祖,210026_01.png,Icon_Rarity_5.png,Icon_Element_Wind.png,369,126,Icon_Skill_025.png,直8/中毒/减防5,Icon_Ability_1020002.png,攻50%,Icon_Ability_1070001.png,中毒伤20%,Icon_Type_Attack.png,
+Arctos,阿尔库特斯,210030_01.png,Icon_Rarity_5.png,Icon_Element_Flame.png,374,121,Icon_Skill_013.png,前方x2/昏迷,Icon_Ability_1020002.png,攻45%/暴伤55,none.png,,Icon_Type_Attack.png,
 Garuda,迦楼罗,210036_01.png,Icon_Rarity_5.png,Icon_Element_Wind.png,383,114,Icon_Skill_025.png,前x3/加血35%,Icon_Ability_1020001.png,血60%,none.png,,Icon_Type_Healing.png,
 High_Midgardsormr,真耶梦加得,210038_01.png,Icon_Rarity_5.png,Icon_Element_Wind.png,356,114,Icon_Skill_021.png,前方x1/昏迷,Icon_Ability_1020006.png,攻30%/血30%,Icon_Ability_1010003.png,龙化时间20%,Icon_Type_Support.png,
 High_Brunhilda,真布伦希尔德,210039_01.png,Icon_Rarity_5.png,Icon_Element_Flame.png,350,120,Icon_Skill_019.png,直线x1/烧伤,Icon_Ability_1020006.png,攻30%/血30%,Icon_Ability_1010003.png,龙化时间20%,Icon_Type_Support.png,
