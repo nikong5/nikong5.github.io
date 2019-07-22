@@ -1,3 +1,4 @@
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ ALL ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
 $(function() {
 	$("#table-servant").bootstrapTable(servantFunc());
 
@@ -29,6 +30,7 @@ $(function() {
 					var strCard4Name = strCard4.substring(strClass.lastIndexOf("/")+1);
 					var strCard5 = objArr[17];
 					var strCard5Name = strCard5.substring(strClass.lastIndexOf("/")+1);
+
 					obj["no"] = (strNo.substring(strNo.lastIndexOf("/")+8)).substring(0,3);
 					obj["class"] = "<img src='img/servant/"+strClassName+"' width='20' height='20'>";
 					obj["icon"] = "<img src='img/servant/"+strIconName+"' width='23' height='23'>";
@@ -105,3 +107,61 @@ function servantFunc() {
 	}
 	return table;
 };
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ ALL ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
+
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ BRANCH SELECT ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+function servantFuncBranchSelect(selClassName) {
+	$("#table-servant").bootstrapTable(servantFunc());
+
+	$.get('input/servant.csv',function(data){
+		var dataList = [];
+		var csv = $.csv.toArrays(data);
+		if(!$.isEmptyObject(csv) && csv.length > 1) {
+			for(var key = 1, len = csv.length; key < len; key++) {
+				var values = csv[key];
+				if(!$.isEmptyObject(values)) {
+					var obj = {};
+					var objArr = (String(values)).split(",");
+					
+					var strNo = objArr[12];
+					var strClass = objArr[20];
+					var strClassName = strClass.substring(strClass.lastIndexOf("/")+1);
+					var strClassNameNoColor = strClassName.substring(2,strClassName.length-4);
+					var strIcon = objArr[12];
+					var strIconName = strIcon.substring(strClass.lastIndexOf("/")+1);
+					var strHogu = objArr[18];
+					var strHoguIcon = strHogu.substring(strClass.lastIndexOf("/")+1);
+					var strHoguName = objArr[19];
+					var strCard1 = objArr[13];
+					var strCard1Name = strCard1.substring(strClass.lastIndexOf("/")+1);
+					var strCard2 = objArr[14];
+					var strCard2Name = strCard2.substring(strClass.lastIndexOf("/")+1);
+					var strCard3 = objArr[15];
+					var strCard3Name = strCard3.substring(strClass.lastIndexOf("/")+1);
+					var strCard4 = objArr[16];
+					var strCard4Name = strCard4.substring(strClass.lastIndexOf("/")+1);
+					var strCard5 = objArr[17];
+					var strCard5Name = strCard5.substring(strClass.lastIndexOf("/")+1);
+
+					obj["no"] = (strNo.substring(strNo.lastIndexOf("/")+8)).substring(0,3);
+					obj["class"] = "<img src='img/servant/"+strClassName+"' width='20' height='20'>";
+					obj["icon"] = "<img src='img/servant/"+strIconName+"' width='23' height='23'>";
+					obj["name"] = objArr[1];
+					obj["hogu"] = "<img src='img/servant/"+strHoguIcon+"' width='20' height='20'>"+"<br>"+"<nobr style='font-size:7px;margin-left:2px;'>"+strHoguName+"</nobr>";
+					obj["card"] = "<nobr><img src='img/servant/"+strCard1Name+"' width='15' height='15'>"+"<img src='img/servant/"+strCard2Name+"' width='15' height='15'>"+"<img src='img/servant/"+strCard3Name+"' width='15' height='15'>"+"<img src='img/servant/"+strCard4Name+"' width='15' height='15'>"+"<img src='img/servant/"+strCard5Name+"' width='15' height='15'></nobr>";
+					obj["type"] = objArr[7];
+					obj["hp"] = "<nobr style='margin-right:10px;'>"+objArr[9]+"</nobr>";
+					obj["atk"] = objArr[10];
+
+					if(strClassNameNoColor==selClassName || selClassName=='ALL'){
+						dataList.push(obj);
+					}
+				}
+			}
+		}
+		console.log(dataList);
+
+		$("#table-servant").bootstrapTable("load", dataList);
+  });
+}
+/*↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ BRANCH SELECT ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑*/
