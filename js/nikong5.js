@@ -86,3 +86,18 @@ function toggle_visibility(id) {
        e.style.display = 'block';
 }
 
+function toggle_visibility_jianr(num,name) {
+    var n = document.getElementsByName(name);
+    for (i=0;i<n.length;i++) {
+        if (i == num-1) {
+            if(n[i].style.display == 'block'){
+                n[i].style.display = 'none';
+            }else{
+                n[i].style.display = 'block';
+            }
+        } else {
+            n[i].style.display = 'none';
+        }
+    }
+}
+
