@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Nikong5</title>
+    <meta name="description" content="基础设定">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../microtip/microtip.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/table.css">
+    <link rel="stylesheet" href="../../css/nikong5.css">
+    <script src="../../jquery/js/jquery.min.js"></script>
+    <script src="../../js/nikong5.js"></script>
+</head>
+
+<body>
+	<header>
+		<div id="sub-header-jianr-include">
+			<!-- include subPageheader -->
+		</div>
+	</header>
+	<section id="pageContent">
+        <div class="contentsPanel">
+            <div class="contentsHeader">基础设定</div>
+            <ul>
+                <a href="#suodijieduan">战斗流程</a><br>
+                <a href="#suodijieduan">&nbsp;・索敌阶段</a><br>
+                <a href="#xuanzezhenxing">&nbsp;・选择阵型</a><br>
+                <a href="#hangxiangpanding">&nbsp;・航向判定</a><br>
+                <a href="#zhandoujiesuan">&nbsp;・战斗结算</a><br>
+                <a href="#yanxi">特殊战斗</a><br>
+                <a href="#yanxi">&nbsp;・演习</a><br>
+                <a href="#haoyouyanxi">&nbsp;・好友演习</a><br>
+                <a href="#zhanyi">&nbsp;・战役</a><br>
+            </ul>
+        </div>
+        <div class="wrap-table100">
+            <h3>战斗流程</h3>
+            <br>
+            <a name="suodijieduan" class="hiddenA"></a>
+            <h5>索敌阶段</h5>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr>
+                        <th style="vertical-align:middle;text-align:center;">索敌</th>
+                        <th style="vertical-align:middle;text-align:center;">加成</th>
+                        <th colspan="2" style="vertical-align:middle;text-align:center;">条件</th>
+                        <th style="vertical-align:middle;text-align:center;">迂回</th>
+                        <th style="vertical-align:middle;text-align:center;">备注</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th style="vertical-align:middle;"><span class="GREEN">成功</span></th>
+                        <td style="vertical-align:middle;">命中↑(5%)<br>回避↑(5%)</td>
+                        <td style="vertical-align:middle;">
+                            <button aria-label="[敌方有水上单位]我方总索敌-敌方总索敌≥10&#10;[敌方无水上单位]我方反潜船索敌+对潜≥敌方总等级" data-microtip-position="top" role="tooltip">必定成功</button>
+                        </td>
+                        <td style="vertical-align:middle;">
+                            <button aria-label="[敌方有水上单位]-10<我方总索敌-敌方总索敌<10" data-microtip-position="top" role="tooltip">概率成功</button>
+                        </td>
+                        <td style="vertical-align:middle;">可</td>
+                        <td style="vertical-align:middle;">侦测敌方阵容<br>可撤退</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;"><span class="RED">失败</span></th>
+                        <td style="vertical-align:middle;">-</td>
+                        <td colspan="2" style="vertical-align:middle;">
+                            <button aria-label="[敌方有水上单位]我方总索敌-敌方总索敌≤-10&#10;[敌方无水上单位]我方反潜船索敌+对潜<敌方总等级" data-microtip-position="top" role="tooltip">失败条件</button>
+                        </td>
+                        <td style="vertical-align:middle;">不可</td>
+                        <td style="vertical-align:middle;">直接选择阵型<br>无法撤退</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <a name="xuanzezhenxing" class="hiddenA"></a>
+            <h5>选择阵型</h5>
+            <h7>无视阵型: 航空战/航空攻击/反潜/夜战反潜</h7>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr>
+                        <th rowspan="2" style="vertical-align:middle;text-align:center;">阵型</th>
+                        <th rowspan="2" style="vertical-align:middle;text-align:center;">加成</th>
+                        <th colspan="3" style="vertical-align:middle;text-align:center;">伤害系数</th>
+                        <th rowspan="2" style="vertical-align:middle;text-align:center;">备注</th>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;text-align:center;">炮击</th>
+                        <th style="vertical-align:middle;text-align:center;">鱼雷</th>
+                        <th style="vertical-align:middle;text-align:center;">夜战</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th style="vertical-align:middle;">单纵阵</th>
+                        <td style="vertical-align:middle;">命中↑(次轮炮击)</td>
+                        <td style="vertical-align:middle;">1.0</td>
+                        <td style="vertical-align:middle;">1.0</td>
+                        <td style="vertical-align:middle;">1.1</td>
+                        <td style="vertical-align:middle;"><br>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">复纵阵</th>
+                        <td style="vertical-align:middle;">回避↑(炮击/鱼雷)</td>
+                        <td style="vertical-align:middle;">0.8</td>
+                        <td style="vertical-align:middle;">0.9</td>
+                        <td style="vertical-align:middle;">0.9</td>
+                        <td style="vertical-align:middle;">被命中后<br>追加回避</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">轮型阵</th>
+                        <td style="vertical-align:middle;">回避↑(航空攻击)</td>
+                        <td style="vertical-align:middle;">0.75</td>
+                        <td style="vertical-align:middle;">0.8</td>
+                        <td style="vertical-align:middle;">1.0</td>
+                        <td style="vertical-align:middle;">防空弹幕<br>(护卫舰)</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">梯形阵</th>
+                        <td style="vertical-align:middle;">暴击率↑<br><span class="RED">被暴击↑/回避↓</span></td>
+                        <td style="vertical-align:middle;">1.0</td>
+                        <td style="vertical-align:middle;">1.0</td>
+                        <td style="vertical-align:middle;">1.0</td>
+                        <td style="vertical-align:middle;">对位回避↓<br>(护卫舰)</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">单横阵</th>
+                        <td style="vertical-align:middle;">回避↑(鱼雷)<br><span class="RED">命中↓(炮击)</span></td>
+                        <td style="vertical-align:middle;">0.8</td>
+                        <td style="vertical-align:middle;">0.8</td>
+                        <td style="vertical-align:middle;">1.0</td>
+                        <td style="vertical-align:middle;">先制反潜<br>(反潜船)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <a name="hangxiangpanding" class="hiddenA"></a>
+            <h5>航向判定</h5>
+            <h7>无视航向: 航空战/航空攻击/反潜/夜战</h7>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr>
+                        <th style="vertical-align:middle;text-align:center;">航向</th>
+                        <th style="vertical-align:middle;text-align:center;">伤害系数</th>
+                        <th style="vertical-align:middle;text-align:center;">基础权重</th>
+                        <th style="vertical-align:middle;text-align:center;">权重增加因素</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th style="vertical-align:middle;"><span class="GREEN">T优势</span></th>
+                        <td style="vertical-align:middle;">1.15</td>
+                        <td style="vertical-align:middle;">10</td>
+                        <td style="vertical-align:middle;">索敌成功<br>我敌总航速差值<br>我敌旗舰航速差值</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;"><span class="BLUE">同航战</span></th>
+                        <td style="vertical-align:middle;">1.0</td>
+                        <td style="vertical-align:middle;">30</td>
+                        <td style="vertical-align:middle;">索敌成功<br>我敌总航速差值</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">反航战</th>
+                        <td style="vertical-align:middle;">0.8</td>
+                        <td style="vertical-align:middle;">30</td>
+                        <td style="vertical-align:middle;">索敌失败<br>敌我旗舰航速差值</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;"><span class="RED">T劣势</span></th>
+                        <td style="vertical-align:middle;">0.65</td>
+                        <td style="vertical-align:middle;">15</td>
+                        <td style="vertical-align:middle;">敌我总航速差值</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <a name="zhandoujiesuan" class="hiddenA"></a>
+            <h5>战斗结算</h5>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr>
+                        <th style="vertical-align:middle;text-align:center;">评价</th>
+                        <th style="vertical-align:middle;text-align:center;">条件</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th style="vertical-align:middle;">SS</th>
+                        <td style="vertical-align:middle;">敌方全灭<br>我方无伤</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">S</th>
+                        <td style="vertical-align:middle;">敌方全灭<br>我方受到伤害</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2" style="vertical-align:middle;">A</th>
+                        <td style="vertical-align:middle;">击沉敌方2/3以上</td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align:middle;">击沉敌方旗舰<br>我方无伤</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2" style="vertical-align:middle;">B</th>
+                        <td style="vertical-align:middle;">我方损血率/敌方损血率>3</td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align:middle;">击沉敌方旗舰</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">C</th>
+                        <td style="vertical-align:middle;">-</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2" style="vertical-align:middle;">D</th>
+                        <td style="vertical-align:middle;">敌方损血率/我方损血率>3</td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align:middle;">敌方全员存活</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br>
+            <h3>特殊战斗</h3>
+            <br>
+            <a name="yanxi" class="hiddenA"></a>
+            <h5>演习</h5>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr>
+                        <th style="vertical-align:middle;text-align:center;">每日刷新</th>
+                        <th style="vertical-align:middle;text-align:center;">说明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th style="vertical-align:middle;">00:00<br>12:00<br>18:00</th>
+                        <td style="vertical-align:middle;">无消耗/无大破保护/无沉船惩罚<br>可获得大量经验<br>每次刷新5名提督/阵容为第一舰队</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <a name="haoyouyanxi" class="hiddenA"></a>
+            <h5>好友演习</h5>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr>
+                        <th style="vertical-align:middle;text-align:center;">每日经验</th>
+                        <th style="vertical-align:middle;text-align:center;">说明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th style="vertical-align:middle;">3次</th>
+                        <td style="vertical-align:middle;">无消耗/无大破保护/无沉船惩罚<br>可获得大量经验(每日不同好友前3次)<br>阵容为驻防部队</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <a name="zhanyi" class="hiddenA"></a>
+            <h5>战役</h5>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr>
+                        <th rowspan="2" style="vertical-align:middle;text-align:center;">战役</th>
+                        <th rowspan="2" style="vertical-align:middle;text-align:center;">获取</th>
+                        <th colspan="2" style="vertical-align:middle;text-align:center;">最大掉率</th>
+                        <th colspan="2" style="vertical-align:middle;text-align:center;">每日刷新</th>
+                        <th rowspan="2" style="vertical-align:middle;text-align:center;">说明</th>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;text-align:center;">普通</th>
+                        <th style="vertical-align:middle;text-align:center;">困难</th>
+                        <th style="vertical-align:middle;text-align:center;">时间</th>
+                        <th style="vertical-align:middle;text-align:center;">次数</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th style="vertical-align:middle;">驱逐战役</th>
+                        <td style="vertical-align:middle;">驱逐核心</td>
+                        <td rowspan="5" style="vertical-align:middle;">20%</td>
+                        <td rowspan="5" style="vertical-align:middle;">60%</td>
+                        <td rowspan="5" style="vertical-align:middle;">00:00</td>
+                        <td rowspan="5" style="vertical-align:middle;">8次</td>
+                        <td rowspan="5" style="vertical-align:middle;">圣建期间一般增至12次<br>掉率与结算评价正相关</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">巡洋战役</th>
+                        <td style="vertical-align:middle;">巡洋核心</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">战列战役</th>
+                        <td style="vertical-align:middle;">战列核心</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">航母战役</th>
+                        <td style="vertical-align:middle;">航母核心</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">潜艇战役</th>
+                        <td style="vertical-align:middle;">潜艇核心</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+	<footer>
+        <div id="top-button-include">
+            <!-- include topButton -->	
+        </div> 
+		<div id="sub-footer-include">
+			<!-- include pagefooter -->	
+		</div>
+	</footer>
+</body>
+
+</html>
