@@ -30,6 +30,7 @@
                 <a href="#suodijieduan">&nbsp;・索敌阶段</a><br>
                 <a href="#xuanzezhenxing">&nbsp;・选择阵型</a><br>
                 <a href="#hangxiangpanding">&nbsp;・航向判定</a><br>
+                <a href="#zhandoujieduan">&nbsp;・战斗阶段</a><br>
                 <a href="#zhandoujiesuan">&nbsp;・战斗结算</a><br>
                 <a href="#yanxi">特殊战斗</a><br>
                 <a href="#yanxi">&nbsp;・演习</a><br>
@@ -177,6 +178,75 @@
                         <td style="vertical-align:middle;">0.65</td>
                         <td style="vertical-align:middle;">15</td>
                         <td style="vertical-align:middle;">敌我总航速差值</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <a name="zhandoujieduan" class="hiddenA"></a>
+            <h5>战斗阶段</h5>
+            <table class="table table-bordered com-table">
+                <thead>
+                    <tr>
+                        <th style="vertical-align:middle;text-align:center;">顺</th>
+                        <th style="vertical-align:middle;text-align:center;">阶段</th>
+                        <th style="vertical-align:middle;text-align:center;">说明</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th style="vertical-align:middle;">1</th>
+                        <th style="vertical-align:middle;">Buff</th>
+                        <td style="vertical-align:middle;">拥有buff技能的单位在该阶段施加buff。</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">2</th>
+                        <th style="vertical-align:middle;">支援</th>
+                        <td style="vertical-align:middle;">某些地图在压制支援点后可手动开启，开启后在<br>该阶段进行航空/炮击支援。</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">3</th>
+                        <th style="vertical-align:middle;">航空战</th>
+                        <td style="vertical-align:middle;">有航系单位在场时，在该阶段进行航空攻击。</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">4</th>
+                        <th style="vertical-align:middle;">导弹战</th>
+                        <td style="vertical-align:middle;">有导驱/防驱(导战)在场时，在该阶段导驱进行导<br>弹攻击，防驱(导战)进行导弹拦截。(我方先结算)</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">5</th>
+                        <th style="vertical-align:middle;">先制反潜</th>
+                        <td style="vertical-align:middle;">一方有水下单位另一方使用单横阵时，在该阶段<br>所有反潜单位同时进行反潜攻击。(实为1~6顺次<br>攻击)</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">6</th>
+                        <th style="vertical-align:middle;">先制鱼雷</th>
+                        <td style="vertical-align:middle;">有潜艇/雷巡在场(Lv≥11)时，在该阶段同时发射<br>鱼雷。(我方先结算)</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">7</th>
+                        <th style="vertical-align:middle;">首轮炮击</th>
+                        <td style="vertical-align:middle;">根据炮程长短排列顺位，双方交替攻击。</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">8</th>
+                        <th style="vertical-align:middle;">次轮炮击</th>
+                        <td style="vertical-align:middle;">拥有长/超长射程或次轮攻击buff的单位，在该<br>阶段1~6顺次攻击。</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">9</th>
+                        <th style="vertical-align:middle;">鱼雷战</th>
+                        <td style="vertical-align:middle;">所有能发射鱼雷的单位，在该阶段同时发射鱼雷。<br>(我方先结算)</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">10</th>
+                        <th style="vertical-align:middle;">闭幕导弹</th>
+                        <td style="vertical-align:middle;">防驱(导战)非大破状态时，在该阶段同时发射导弹。</td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">11</th>
+                        <th style="vertical-align:middle;">夜战</th>
+                        <td style="vertical-align:middle;">消耗10%弹，伤害大幅增加。炮击单位进行炮击，<br>鱼雷单位发射鱼雷，导弹单位(有导弹时)发射导<br>弹，航系单位不参与夜战。</td>
                     </tr>
                 </tbody>
             </table>
