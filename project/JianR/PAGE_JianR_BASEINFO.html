@@ -48,6 +48,9 @@
                 <a href="#jianzaohuodong">&nbsp;・建造活动(圣建)</a><br>
                 <a href="#haogandujiacheng">好感度</a><br>
                 <a href="#haogandujiacheng">&nbsp;・好感度加成</a><br>
+                <a href="#hangkongjizhi">战斗机制</a><br>
+                <a href="#hangkongjizhi">&nbsp;・航空机制</a><br>
+                <a href="#daodanjizhi">&nbsp;・导弹机制</a><br>
             </ul>
         </div>
         <div class="wrap-table100">
@@ -700,6 +703,101 @@
                         <td style="vertical-align:middle;">15</td>
                         <td style="vertical-align:middle;">15</td>
                         <td style="vertical-align:middle;">15</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br>
+            <h3>战斗机制</h3>
+            <br>
+            <a name="hangkongjizhi" class="hiddenA"></a>
+            <h5>航空机制</h5>
+            <h7>※基于新版航空机制</h7>
+            <table class="table table-bordered com-table">
+                <tbody>
+                    <tr>
+                        <th style="vertical-align:middle;">关于船型</th>
+                        <td style="vertical-align:middle;">
+                            <p>大型船取消对空回避，擦伤不可避，更依赖高血高甲来减伤。</p>
+                            <p>小型船极大提升对空回避，更依赖高频率攻击和单发击沉。</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">对空值</th>
+                        <td style="vertical-align:middle;">
+                            <p>减伤对空值 = 本体对空+2.5*∑(装备对空值*防空倍率)</p>
+                            <p>击坠对空值 = 本体对空+全队对空补正+∑装备对空值</p>
+                            <p>对空补正仅影响击坠，防空倍率仅影响减伤，<br>装备对空值的收益远远强于本体对空。</p>
+                            <p>对空补正收益降低，导致加防空的主炮价值降低。</p>
+                            <p>本体对空收益降低，导致对空Buff价值跟着降低。</p>
+                            <p>无比等低对空炮船可依靠装备和补正达到正常对空水准。</p>
+                            <p>单个单位的对空值越高收益越低，防空炮应尽量分散装备。</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">舰载机</th>
+                        <td style="vertical-align:middle;">
+                            <p>单发击沉的重要性导致彗星/天山等低伤低铝耗飞机基本被淘汰，<br>汉考克/不挠等能直接强化装备数值的可继续使用。<br>同理F4U-7/G.55S等低伤兼备对空的飞机也大大降低价值。</p>
+                            <p>想达到较好的单发击沉效果，轰炸机数值至少要在12以上。</p>
+                            <p>对舰载机要求提高的同时，铝耗有所降低，B25不再是活动专用。</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">防空炮/<br>对空雷达</th>
+                        <td style="vertical-align:middle;">
+                            <p>只看两个数值：装备对空值、防空倍率。</p>
+                            <p>给中小型船的一个格子装备防空炮收益极高。</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">“奇袭”</th>
+                        <td style="vertical-align:middle;">
+                            <p>奇袭的价值被拉平，但目前仍为航系队必备旗舰技。</p>
+                            <p>对敌大船提供5~8%的伤害增益，敌小船提供≈10%的命中增益。</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">关于开幕</th>
+                        <td style="vertical-align:middle;">
+                            <p>只看两个属性：命中、伤害。</p>
+                            <p>增加攻击频率即多重开幕变的尤为重要。(航系+导弹+鱼雷)</p>
+                            <p>未改航系基本无法出场，混编航系队护航效果极差。</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <a name="daodanjizhi" class="hiddenA"></a>
+            <h5>导弹机制</h5>
+            <table class="table table-bordered com-table">
+                <tbody>
+                    <tr>
+                        <th style="vertical-align:middle;">关于船型</th>
+                        <td style="vertical-align:middle;">
+                            <p>导驱可装备反舰导弹，防驱和导战可装备防空导弹。</p>
+                            <p>其中一个装备格子必须装备相应的导弹发射器。</p>
+                            <p>发射导弹的数量等于装备导弹的数量。</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">反舰导弹</th>
+                        <td style="vertical-align:middle;">
+                            <p>导驱在“导弹战”阶段发射导弹。<br>突防>拦截时必定突防，拦截≥突防时必定被拦截。</p>
+                            <p>“夜战”可发射导弹(多段攻击)。</p>
+                            <p>夜战有导弹则发射导弹，无导弹则炮击，不能反潜。</p>
+                            <p>中破可发射导弹，大破无法发射。</p>
+                            <p>每场战斗中只有在导弹战发射导弹了才扣铝。</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="vertical-align:middle;">防空导弹</th>
+                        <td style="vertical-align:middle;">
+                            <p>防驱/导战仅在“导弹战”阶段可拦截导弹。<br>拦截≥突防时必定拦截，突防>拦截时不拦截。</p>
+                            <p>在“闭幕导弹”阶段可发射导弹，“夜战”可发射导弹(多段攻击)。</p>
+                            <p>夜战有导弹则发射导弹，无导弹则炮击，不能反潜。</p>
+                            <p>高拦截优先拦截高突防，与导弹位置、舰船位置无关。</p>
+                            <p>装备2导弹的防驱/导战可以拦截两艘导驱分别发射的各1导弹。</p>
+                            <p>中破及大破均可正常拦截，大破无闭幕导弹。</p>
+                        </td>
                     </tr>
                 </tbody>
             </table>
