@@ -176,6 +176,9 @@
 .ORANGE {
 	color: orange;
 }
+.PURPLE {
+	color: purple;
+}
 /* dynamic rainbow */
 @keyframes hue {
     from {
