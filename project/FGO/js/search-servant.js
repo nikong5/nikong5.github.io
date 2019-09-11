@@ -46,7 +46,7 @@ $(function() {
 		}
 		console.log(dataList);
 		$("#table-servant").bootstrapTable("load", dataList);
-    });
+	});
 });
 
 function servantFunc() {
@@ -59,6 +59,9 @@ function servantFunc() {
 		sortable: true, //是否启用排序
 		sortOrder: "desc", //排序方式
 		sortName: "no", //需要排序的字段
+		onClickRow:function(row) {
+			window.open("input/servant/"+row.no+".html",row.name,"fullscreen=no,top=50,left=50,width=320,height=400,resizable=no");
+		},
 		columns: [{
 				field: 'no',
 				title: 'NO',
