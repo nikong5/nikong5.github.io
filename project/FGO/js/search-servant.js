@@ -60,7 +60,7 @@ function servantFunc() {
 		sortOrder: "desc", //排序方式
 		sortName: "no", //需要排序的字段
 		onClickRow:function(row) {
-			window.open("input/servant/"+row.no+".html",row.name,"fullscreen=no,top=50,left=50,width=320,height=400,resizable=no");
+			window.open("input/servant/"+row.no+".html",row.name,"fullscreen=no,width=350,height=500,resizable=no");
 		},
 		columns: [{
 				field: 'no',
