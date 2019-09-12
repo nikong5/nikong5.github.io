@@ -33,7 +33,7 @@ $(function() {
 
 					obj["no"] = (strNo.substring(strNo.lastIndexOf("/")+8)).substring(0,3);
 					obj["class"] = "<img src='img/servant/"+strClassName+"' width='20' height='20'>";
-					obj["icon"] = "<img src='img/servant/"+strIconName+"' width='23' height='23'>";
+					obj["icon"] = "<img src='img/servant/"+strIconName+"' width='21' height='23'>";
 					obj["name"] = objArr[1];
 					obj["hogu"] = "<img src='img/servant/"+strHoguIcon+"' width='20' height='20'>"+"<br>"+"<nobr style='font-size:7px;margin-left:2px;'>"+strHoguName+"</nobr>";
 					obj["card"] = "<nobr><img src='img/servant/"+strCard1Name+"' width='15' height='15'>"+"<img src='img/servant/"+strCard2Name+"' width='15' height='15'>"+"<img src='img/servant/"+strCard3Name+"' width='15' height='15'>"+"<img src='img/servant/"+strCard4Name+"' width='15' height='15'>"+"<img src='img/servant/"+strCard5Name+"' width='15' height='15'></nobr>";
@@ -148,7 +148,7 @@ function servantFuncBranchSelect(selClassName) {
 
 					obj["no"] = (strNo.substring(strNo.lastIndexOf("/")+8)).substring(0,3);
 					obj["class"] = "<img src='img/servant/"+strClassName+"' width='20' height='20'>";
-					obj["icon"] = "<img src='img/servant/"+strIconName+"' width='23' height='23'>";
+					obj["icon"] = "<img src='img/servant/"+strIconName+"' width='21' height='23'>";
 					obj["name"] = objArr[1];
 					obj["hogu"] = "<img src='img/servant/"+strHoguIcon+"' width='20' height='20'>"+"<br>"+"<nobr style='font-size:7px;margin-left:2px;'>"+strHoguName+"</nobr>";
 					obj["card"] = "<nobr><img src='img/servant/"+strCard1Name+"' width='15' height='15'>"+"<img src='img/servant/"+strCard2Name+"' width='15' height='15'>"+"<img src='img/servant/"+strCard3Name+"' width='15' height='15'>"+"<img src='img/servant/"+strCard4Name+"' width='15' height='15'>"+"<img src='img/servant/"+strCard5Name+"' width='15' height='15'></nobr>";
