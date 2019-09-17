@@ -173,6 +173,9 @@
 .BLUE {
 	color: blue;
 }
+.YELLOW {
+	color: rgb(163, 163, 0);
+}
 .ORANGE {
 	color: orange;
 }
