@@ -185,6 +185,9 @@
 .BLACK {
 	color: black;
 }
+.GRAY {
+	color: gray;
+}
 /* dynamic rainbow */
 @keyframes hue {
     from {
