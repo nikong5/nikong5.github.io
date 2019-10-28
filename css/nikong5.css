@@ -207,3 +207,20 @@
 	background-image: linear-gradient(to right bottom, rgb(255,0,0), rgb(255,128,0), rgb(255,255,0), rgb(0,255,0), rgb(0,255,128), rgb(0,255,255), rgb(0,128,255), rgb(0,0,255), rgb(128,0,255), rgb(255,0,255), rgb(255,0,128));
 	-webkit-background-clip: text;
 }
+
+/* background color customize */
+.BG-RED {
+	background-color: rgb(253, 190, 190);
+}
+.BG-BLUE {
+	background-color: rgb(212, 220, 245);
+}
+.BG-GREEN {
+	background-color: rgb(237, 253, 227);
+}
+.BG-YELLOW {
+	background-color: rgb(251, 252, 197);
+}
+.BG-PURPLE {
+	background-color: rgb(253, 193, 249);
+}
