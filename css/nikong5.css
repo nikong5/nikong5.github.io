@@ -188,6 +188,9 @@
 .GRAY {
 	color: gray;
 }
+.BROWN {
+	color: brown;
+}
 /* dynamic rainbow */
 @keyframes hue {
     from {
