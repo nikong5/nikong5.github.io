@@ -1,9 +1,16 @@
+.PUNISH-TR-S {
+    background-color: rgb(255, 219, 219);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:39%;
+}
 .PUNISH-TR-A {
     background-color: rgb(243, 225, 242);
     background-repeat:no-repeat;
     background-size:contain;
-    background-position:37%;
-}.PUNISH-TR {
+    background-position:39%;
+}
+.PUNISH-TR {
     background-repeat:no-repeat;
     background-size:contain;
     background-position:1%;
