@@ -56,6 +56,7 @@ $(function(){
     $("#sub-header-fgo-include").load("../../sub-header-fgo.html #subPageheader");
     $("#sub-header-dl-include").load("../../sub-header-dl.html #subPageheader");
     $("#sub-header-jianr-include").load("../../sub-header-jianr.html #subPageheader");
+    $("#sub-header-punish-include").load("../../sub-header-punish.html #subPageheader");
     $("#sub-footer-include").load("../../footer.html #pagefooter");
     $("#top-button-include").load("../../top-button.html #topButton");
 

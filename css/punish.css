@@ -1,0 +1,23 @@
+.PUNISH-TR-A {
+    background-color: rgb(243, 225, 242);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:37%;
+}.PUNISH-TR {
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:1%;
+}
+.PUNISH-TH-TITLE {
+    vertical-align:middle;
+    text-align:center;
+}
+.PUNISH-TH {
+    vertical-align:middle;
+    padding-left:9% !important;
+}
+.PUNISH-TD {
+    vertical-align:middle;
+    white-space:normal !important;
+    word-break:break-all;
+}
