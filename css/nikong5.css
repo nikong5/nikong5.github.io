@@ -227,3 +227,9 @@
 .BG-PURPLE {
 	background-color: rgb(253, 237, 252);
 }
+
+/* comment */
+.COMMENT {
+	font-size: 90%;
+	color: green;
+}
