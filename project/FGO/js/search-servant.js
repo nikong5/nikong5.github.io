@@ -40,6 +40,7 @@ $(function() {
 					obj["type"] = objArr[7];
 					obj["hp"] = "<nobr style='margin-right:10px;'>"+objArr[9]+"</nobr>";
 					obj["atk"] = objArr[10];
+					obj["rare"] = objArr[8];
 					dataList.push(obj);
 				}
 			}
@@ -106,6 +107,11 @@ function servantFunc() {
 				field: 'atk',
 				title: 'ATK',
 				width: 40
+			},
+			{
+				field: 'rare',
+				title: '获取方式',
+				width: 90
 			}]
 	}
 	return table;
@@ -155,6 +161,7 @@ function servantFuncBranchSelect(selClassName) {
 					obj["type"] = objArr[7];
 					obj["hp"] = "<nobr style='margin-right:10px;'>"+objArr[9]+"</nobr>";
 					obj["atk"] = objArr[10];
+					obj["rare"] = objArr[8];
 
 					if(strClassNameNoColor==selClassName || selClassName=='ALL'){
 						dataList.push(obj);
