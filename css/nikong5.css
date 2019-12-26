@@ -235,11 +235,10 @@
 }
 
 /* icon text right-down */
-.ICON-RD {
+/* .ICON-RD {
 	position:absolute;
 	left:15px;
 	top:16px;
 	font-size:11px;
-  	/* -webkit-text-fill-color: blue; */
   	-webkit-text-stroke: 0.5px blue;
-}
+} */
