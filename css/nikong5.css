@@ -235,10 +235,10 @@
 }
 
 /* icon text right-down */
-/* .ICON-RD {
+.ICON-RD {
 	position:absolute;
-	left:15px;
-	top:16px;
-	font-size:11px;
-  	-webkit-text-stroke: 0.5px blue;
-} */
+	left:19px;
+	top:19px;
+	font-size:15px;
+  	-webkit-text-stroke: 0.5px rgb(0, 255, 0);
+}
