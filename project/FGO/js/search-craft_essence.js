@@ -16,7 +16,7 @@ $(function() {
 					var indexIcon = strIcon.lastIndexOf("\/");
 					var strIconName = strIcon.substring(indexIcon + 1, strIcon.length); //截取最后一个斜杠后的字符串
 					obj["no"] = readIntoArray(strNo)[2]-1;
-					obj["icon"] = "<img src='img/gainianlizhuang/"+strIconName+"' width='23' height='23'>";
+					obj["icon"] = "<img src='img/gainianlizhuang/"+strIconName+"' width='28' height='28'>";
 					obj["name"] = objArr[2];
 					obj["cost"] = objArr[5];
 					obj["hp"] = objArr[6]+"<br>"+objArr[7];
