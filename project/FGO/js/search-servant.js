@@ -61,7 +61,8 @@ function servantFunc() {
 		sortOrder: "desc", //排序方式
 		sortName: "no", //需要排序的字段
 		onClickRow:function(row) {
-			window.open("input/servant/"+row.no+".html",row.name,"fullscreen=no,width=350,height=500,resizable=no");
+			//window.open("input/servant/"+row.no+".html",row.name,"fullscreen=no,width=350,height=500,resizable=no");
+			window.location.href = "servant_detail.html?sno="+row.no;
 		},
 		columns: [{
 				field: 'no',
