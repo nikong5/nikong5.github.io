@@ -229,7 +229,6 @@ function tegongFunc() {
 	var table = {
         cache: true,
 		showHeader: false,
-		sortOrder: 'desc',
 		columns: [{
 				field: 'col1'
 			}]
@@ -237,11 +236,10 @@ function tegongFunc() {
 	return table;
 };
 
-
 function beitegongFunc() {
 	var table = {
         cache: true,
-        showHeader: false,
+		showHeader: false,
 		columns: [{
 				field: 'col1'
 			}]
