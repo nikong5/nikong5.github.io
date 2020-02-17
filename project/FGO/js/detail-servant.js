@@ -228,7 +228,8 @@ function skillPassiveFunc() {
 function tegongFunc() {
 	var table = {
         cache: true,
-        showHeader: false,
+		showHeader: false,
+		sortOrder: 'desc',
 		columns: [{
 				field: 'col1'
 			}]
