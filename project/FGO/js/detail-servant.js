@@ -1,7 +1,9 @@
 $(function() {
 	$("#table-base").bootstrapTable(baseFunc());
 	$("#table-hogu").bootstrapTable(hoguFunc());
-	$("#table-skill-active").bootstrapTable(skillActiveFunc());
+	$("#table-skill-1").bootstrapTable(skillActiveFunc());
+	$("#table-skill-2").bootstrapTable(skillActiveFunc());
+	$("#table-skill-3").bootstrapTable(skillActiveFunc());
 	$("#table-skill-passive").bootstrapTable(skillPassiveFunc());
 	$("#table-tegong").bootstrapTable(tegongFunc());
 	$("#table-beitegong").bootstrapTable(beitegongFunc());
@@ -28,7 +30,7 @@ $(function() {
 				}
 			}
 		}
-		console.log(dataList);
+		// console.log(dataList);
         $("#table-base").bootstrapTable("load", dataList);
 	});
 
@@ -48,16 +50,22 @@ $(function() {
 				}
 			}
 		}
-		console.log(dataList);
+		// console.log(dataList);
         $("#table-hogu").bootstrapTable("load", dataList);
 	});
 
-	//active skill info
-	$.get('input/servant/'+sno+'/'+sno+'_skill_active.csv',function(data){
+	//skill 1
+	$.get('input/servant/'+sno+'/'+sno+'_skill_1.csv',function(data){
 		var dataList = [];
 		var csv = $.csv.toArrays(data);
 		if(!$.isEmptyObject(csv) && csv.length > 1) {
-			for(var key = 1, len = csv.length; key < len; key++) {
+			//charge time
+			var ctime = csv[1];
+			if(!$.isEmptyObject(ctime)) {
+				$("#skill-charge-1").text(ctime);
+			}
+			//skill 1 detail
+			for(var key = 2, len = csv.length; key < len; key++) {
 				var values = csv[key];
 				if(!$.isEmptyObject(values)) {
 					var obj = {};
@@ -67,9 +75,64 @@ $(function() {
 					dataList.push(obj);
 				}
 			}
+			
 		}
-		console.log(dataList);
-        $("#table-skill-active").bootstrapTable("load", dataList);
+		// console.log(dataList);
+        $("#table-skill-1").bootstrapTable("load", dataList);
+	});
+
+	//skill 2
+	$.get('input/servant/'+sno+'/'+sno+'_skill_2.csv',function(data){
+		var dataList = [];
+		var csv = $.csv.toArrays(data);
+		if(!$.isEmptyObject(csv) && csv.length > 1) {
+			//charge time
+			var ctime = csv[1];
+			if(!$.isEmptyObject(ctime)) {
+				$("#skill-charge-2").text(ctime);
+			}
+			//skill 2 detail
+			for(var key = 2, len = csv.length; key < len; key++) {
+				var values = csv[key];
+				if(!$.isEmptyObject(values)) {
+					var obj = {};
+					var objArr = (String(values)).split(":");
+					
+                    obj["col1"] = objArr[0];
+					dataList.push(obj);
+				}
+			}
+			
+		}
+		// console.log(dataList);
+        $("#table-skill-2").bootstrapTable("load", dataList);
+	});
+
+	//skill 3
+	$.get('input/servant/'+sno+'/'+sno+'_skill_3.csv',function(data){
+		var dataList = [];
+		var csv = $.csv.toArrays(data);
+		if(!$.isEmptyObject(csv) && csv.length > 1) {
+			//charge time
+			var ctime = csv[1];
+			if(!$.isEmptyObject(ctime)) {
+				$("#skill-charge-3").text(ctime);
+			}
+			//skill 3 detail
+			for(var key = 2, len = csv.length; key < len; key++) {
+				var values = csv[key];
+				if(!$.isEmptyObject(values)) {
+					var obj = {};
+					var objArr = (String(values)).split(":");
+					
+                    obj["col1"] = objArr[0];
+					dataList.push(obj);
+				}
+			}
+			
+		}
+		// console.log(dataList);
+        $("#table-skill-3").bootstrapTable("load", dataList);
 	});
 
 	//passive skill info
@@ -88,7 +151,7 @@ $(function() {
 				}
 			}
 		}
-		console.log(dataList);
+		// console.log(dataList);
 		$("#table-skill-passive").bootstrapTable("load", dataList);
 	});
 
@@ -117,7 +180,7 @@ $(function() {
 								}
 							}
 						}
-						console.log(dataList);
+						// console.log(dataList);
 						$("#table-tegong").bootstrapTable("load", dataList);
 					});
 
@@ -151,7 +214,7 @@ $(function() {
 								}
 							}
 						}
-						console.log(dataList);
+						// console.log(dataList);
 						$("#table-beitegong").bootstrapTable("load", dataList);
 					});
 
@@ -190,6 +253,19 @@ function hoguFunc() {
 	var table = {
         cache: true,
 		showHeader: false,
+		classes: 'table-bordered table-striped',
+		columns: [{
+				field: 'col1',
+				align: 'center'
+			}]
+	}
+	return table;
+};
+
+function skill1Func() {
+	var table = {
+        cache: true,
+        showHeader: false,
 		classes: 'table-bordered table-striped',
 		columns: [{
 				field: 'col1',
