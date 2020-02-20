@@ -237,7 +237,7 @@ function baseFunc() {
         showHeader: false,
 		columns: [{
 				field: 'col1',
-                width: 20
+                width: 23
 			},
 			{
 				field: 'col2',
@@ -245,7 +245,7 @@ function baseFunc() {
 			},
 			{
 				field: 'col3',
-				width: 20
+				width: 23
 			},
 			{
 				field: 'col4',
