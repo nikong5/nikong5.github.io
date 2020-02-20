@@ -241,7 +241,7 @@ function baseFunc() {
 			},
 			{
 				field: 'col2',
-				width: 50
+				width: 40
 			},
 			{
 				field: 'col3',
