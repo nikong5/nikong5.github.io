@@ -241,7 +241,7 @@ function baseFunc() {
 			},
 			{
 				field: 'col2',
-				width: 40
+				width: 50
 			},
 			{
 				field: 'col3',
@@ -249,7 +249,7 @@ function baseFunc() {
 			},
 			{
 				field: 'col4',
-				width: 60
+				width: 50
 			}]
 	}
 	return table;
