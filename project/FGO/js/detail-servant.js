@@ -39,7 +39,13 @@ $(function() {
 		var dataList = [];
 		var csv = $.csv.toArrays(data);
 		if(!$.isEmptyObject(csv) && csv.length > 1) {
-			for(var key = 1, len = csv.length; key < len; key++) {
+			//hogu type
+			var htype = csv[1];
+			if(!$.isEmptyObject(htype)) {
+				$("#hogu-type").text(htype);
+			}
+			//hogu detail
+			for(var key = 2, len = csv.length; key < len; key++) {
 				var values = csv[key];
 				if(!$.isEmptyObject(values)) {
 					var obj = {};
